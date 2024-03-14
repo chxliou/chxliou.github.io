@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Ph.D. Student. <a href='https://www.comp.hkbu.edu.hk/'>Hong Kong Baptist University</a>. Kowloon Tong, Hong Kong SAR. 
+subtitle: Ph.D. Student. Hong Kong Baptist University. Kowloon Tong, Hong Kong SAR. 
 
 profile:
   align: right
