@@ -20,6 +20,6 @@ I am currently a Ph.D student at [HKBU CSD](https://www.comp.hkbu.edu.hk), super
 
 **Research Vision**: To develope the artificial general intelligence that can actively reveal and utilize causal mechanism behind the complex reality.
 
-Contact: cscxliu _AT_ comp _dot_ hkbu _dot_ edu _dot_ hk
+Contact: cscxliu (AT) comp (dot) hkbu (dot) edu (dot) hk
 
 Office: DLB 625. Hong Kong Baptist University. Kowloon Tong, Hong Kong SAR. 
