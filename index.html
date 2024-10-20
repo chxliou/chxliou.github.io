@@ -11,16 +11,20 @@
       rel="stylesheet"
       href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css"
     />
-    <!-- My CSS -->
-    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div id="app"></div>
     <script>
       window.$docsify = {
+        timeUpdater: {
+          text: ">last update time: {docsify-updated}",
+          formatUpdated: "{YYYY}/{MM}/{DD}",
+          whereToPlace: "bottom",  // "top" or "bottom", default to "bottom"
+        },
         //...
       };
     </script>
     <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-updated/src/time-updater.min.js"></script>
   </body>
 </html>
