@@ -1,10 +1,10 @@
 ## Chenxi Liu (he/him)
 
 <div style="display: flex; align-items: center;">
-    <div style="flex: 1; padding: 10px;">
+    <div class="col-xs-12 col-md-auto col-warapper" style="flex: 1; padding: 10px;">
         <img src="assets/cx_photo.jpg" style="width: 150px; height: auto;">
     </div>
-    <div style="flex: 5; padding: 10px;">
+    <div class="col-xs-12 col-md col-warapper" style="flex: 5; padding: 10px;">
         <p>I am currently a Ph.D student at <a href="https://www.comp.hkbu.edu.hk">HKBU CSD</a>, supervised by <a href="https://bhanml.github.io/">Dr. Bo Han</a>. 
         Before that, I worked closely with Prof. <a href="https://kunkuang.github.io/">Kun Kuang</a> at <a href="http://www.cs.zju.edu.cn/">ZJU CS</a>.
         Previously, I obtained my B.Sc & M.Sc degree in Statistics from <a href="https://stat-ds.sustech.edu.cn/?lang=en-us">SUSTech</a> and <a href="https://math.fudan.edu.cn/mathen/main.htm">Fudan</a> respectively.</p>
@@ -18,10 +18,10 @@
 ## Publications
 
 <div style="display: flex; align-items: center;">
-    <div style="flex: 1; padding: 2px;">
+    <div class="col-xs-12 col-md-auto col-warapper">
         <img src="assets/causalcoat.webp" style="width: 80px; height: auto;">
     </div>
-    <div style="flex: 10; padding: 2px;">
+    <div class="col-xs-12 col-md col-warapper">
         <p><b>Discovery of the Hidden World with Large Language Models</b> <br> 
         Chenxi Liu*, Yongqiang Chen*, Tongliang Liu, Mingming Gong, James Cheng, Bo Han, and Kun Zhang <br>
         In <i>Advances in Neural Information Processing Systems (<b>NeurIPS</b>), 2024.</i> <br>
