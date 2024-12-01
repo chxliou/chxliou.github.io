@@ -16,9 +16,7 @@ Office: DLB 625. Hong Kong Baptist University. Kowloon Tong, Hong Kong SAR.
 ### 🔥 Discovery of the Hidden World with Large Language Models
 Chenxi Liu*, Yongqiang Chen*, Tongliang Liu, Mingming Gong, James Cheng, Bo Han, and Kun Zhang <br>
 In <i>Advances in Neural Information Processing Systems (<b>NeurIPS</b>), 2024.</i> <br>
-[paper](https://arxiv.org/abs/2402.03941) / [code](https://github.com/tmlr-group/CausalCOAT) / [website](https://causalcoat.github.io/) 
-
-
+[paper](https://arxiv.org/abs/2402.03941) / [code](https://github.com/tmlr-group/CausalCOAT) / [website](https://causalcoat.github.io/) / [博客](https://mp.weixin.qq.com/s/Lt2VlHiMiHUlo8hewFJqjQ) / [视频介绍](https://www.bilibili.com/video/BV1vaUNYTEr3/?share_source=copy_web&vd_source=5460ce07d59a3de60388d68621af7f5c&t=3789)
 
 ### Causal Structure Learning for Latent Intervened Non-stationary Data
 Chenxi Liu and Kun Kuang <br>
