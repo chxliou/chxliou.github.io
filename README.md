@@ -2,7 +2,7 @@
 
 I am currently a Ph.D student at [HKBU CSD](https://www.comp.hkbu.edu.hk), supervised by [Dr. Bo Han](https://bhanml.github.io/). Before that, I worked closely with [Prof. Kun Kuang](https://kunkuang.github.io/) at [ZJU CS](http://www.cs.zju.edu.cn/). Previously, I obtained my B.Sc & M.Sc degree in Statistics from [SUSTech](https://stat-ds.sustech.edu.cn/?lang=en-us) and [Fudan](https://math.fudan.edu.cn/mathen/main.htm) respectively.
 
-**Research Vision**: To develope the artificial general intelligence that can actively reveal and utilize causal mechanism behind the complex reality.
+**Research Vision**: Reveal and utilize the causal mechanism for realistic influence.
 
 Contact: cscxliu (AT) comp (dot) hkbu (dot) edu (dot) hk
 
@@ -23,3 +23,18 @@ Chenxi Liu and Kun Kuang <br>
 In <i>International Conference on Machine Learning (<b>ICML</b>), 2023.</i> <br>
 [paper](https://proceedings.mlr.press/v202/liu23t) / [code](https://github.com/chxliou/LIN2023)
 
+<!-- 
+
+## Misc
+
+**Selected Awards**
+- NeurIPS Scholar Award, 2024
+- Scholarship in School of Mathematics, Fudan, 2022
+- Outstanding Undergraduate Thesis, SUSTech, 2021
+- First Prize in NOIP
+
+**Academic Service**
+- ML Conference referee: ICLR 25, CleaR 25
+- Journal referee: JAIR
+
+-->
