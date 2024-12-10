@@ -1,6 +1,6 @@
 ## Chenxi Liu (he/him)
 
-I am currently a Ph.D student at [HKBU CSD](https://www.comp.hkbu.edu.hk), supervised by [Dr. Bo Han](https://bhanml.github.io/). Before that, I worked closely with [Prof. Kun Kuang](https://kunkuang.github.io/) at [ZJU CS](http://www.cs.zju.edu.cn/). Previously, I obtained my B.Sc & M.Sc degree in Statistics from [SUSTech](https://stat-ds.sustech.edu.cn/?lang=en-us) and [Fudan](https://math.fudan.edu.cn/mathen/main.htm) respectively.
+I am currently a Ph.D student at [HKBU](https://www.comp.hkbu.edu.hk), supervised by [Dr. Bo Han](https://bhanml.github.io/). I work as a visiting student at [MBZUAI](https://mbzuai.ac.ae/research/department/machine-learning-department/), collaborating with [Prof. Kun Zhang](https://www.andrew.cmu.edu/user/kunz1/) and [Dr. Yongqiang Chen](https://lfhase.win/). Before that, I also worked closely with [Prof. Kun Kuang](https://kunkuang.github.io/) at [Zhejiang Univ.](http://www.cs.zju.edu.cn/). I obtained my B.Sc & M.Sc degree in Statistics from [SUSTech](https://stat-ds.sustech.edu.cn/?lang=en-us) and [Fudan](https://math.fudan.edu.cn/mathen/main.htm) respectively.
 
 **Research Vision**: Reveal and utilize the causal mechanism for realistic influence.
 
