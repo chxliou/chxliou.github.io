@@ -25,7 +25,7 @@ To reveal and leverage causal mechanisms for reliable reasoning and decision-mak
 
 
 #### On the Thinking–Language Modeling Gap in Large Language Models  
-<u>Chenxi Liu*</u>, **Yongqiang Chen***, Tongliang Liu, James Cheng, Bo Han, Kun Zhang  
+<u>Chenxi Liu*</u>, Yongqiang Chen*, Tongliang Liu, James Cheng, Bo Han, Kun Zhang  
 <i>ICLR Workshop on Reasoning and Planning for Large Language Models, 2025.</i>  
 [Paper](https://arxiv.org/abs/2505.12896) ·
 [Project Page](https://causalcoat.github.io/lot.html)
