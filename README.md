@@ -69,7 +69,7 @@ To reveal and leverage causal mechanisms for reliable reasoning and decision-mak
 ## Academic Service
 
 - **Conference Reviewer** <br>
-   ICML, NeurIPS, ICLR CLeaR, KDD  
+   ICML, NeurIPS, ICLR, CLeaR, KDD.
 
 - **Journal Reviewer**  <br>
    JAIR, TNNLS, MLJ, NN, TNNLS.
