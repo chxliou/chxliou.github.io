@@ -29,7 +29,7 @@
 
       updateButton(isDark) {
         const btn = document.getElementById('theme-toggle');
-        if (btn) btn.textContent = isDark ? '☀ light' : '☾ dark';
+        if (btn) btn.textContent = isDark ? '☾ dark' : '☀ light';
       },
 
       init() {
@@ -135,20 +135,39 @@
         content.innerHTML = marked.parse(processed);
         
         this.insertPhoto();
+        this.moveThemeToggle();
         this.addClustrMaps();
-        this.addLastUpdate();
+      },
+
+      moveThemeToggle() {
+        const btn = document.getElementById('theme-toggle');
+        const content = document.getElementById('content');
+        if (btn && content) {
+          content.appendChild(btn);
+        }
       },
 
       insertPhoto() {
-        const firstH3 = document.querySelector('#content h3:first-of-type');
+        const content = document.getElementById('content');
+        const firstH3 = content.querySelector('h3:first-of-type');
         if (!firstH3) return;
+
+        const introWrap = document.createElement('div');
+        introWrap.id = 'intro-section';
+        firstH3.parentNode.insertBefore(introWrap, firstH3);
+
+        let el = firstH3;
+        while (el && el.tagName !== 'HR') {
+          const next = el.nextSibling;
+          introWrap.appendChild(el);
+          el = next;
+        }
 
         const img = document.createElement('img');
         img.id = 'profile-photo';
         img.src = 'assets/cx_photo.jpg';
         img.alt = 'Chenxi Liu';
-
-        firstH3.parentNode.insertBefore(img, firstH3);
+        introWrap.appendChild(img);
       },
 
       addClustrMaps() {
@@ -179,10 +198,6 @@
         container.appendChild(lastUpdate);
 
         content.appendChild(container);
-      },
-
-      addLastUpdate() {
-        // Already added in addClustrMaps
       }
     },
 

@@ -23,6 +23,7 @@ html.dark body {
 }
 
 .markdown-section {
+  position: relative;
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.04);
@@ -157,35 +158,53 @@ html.dark .markdown-section hr {
   font-weight: 600;
 }
 
+#intro-section {
+  position: relative;
+  padding-right: 180px;
+  min-height: 200px;
+}
+
 #profile-photo {
-  float: right;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
   width: 160px;
   height: 200px;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  margin: 0 0 24px 32px;
   object-fit: cover;
 }
 
 #theme-toggle {
-  position: fixed;
-  bottom: 45px;
-  right: 15px;
-  opacity: 0.15;
-  font-size: 13px;
-  color: inherit;
-  z-index: 1000;
-  transition: opacity 0.3s;
-  background: rgba(128,128,128,0.1);
-  padding: 4px 10px;
-  border-radius: 6px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 14px;
+  color: #86868b;
+  background: rgba(0,0,0,0.05);
+  padding: 8px 14px;
+  border-radius: 8px;
   cursor: pointer;
   border: none;
   font-family: inherit;
+  transition: all 0.2s ease;
+  z-index: 10;
 }
 
 #theme-toggle:hover {
-  opacity: 0.9;
+  background: rgba(0,0,0,0.1);
+  color: #1d1d1f;
+}
+
+html.dark #theme-toggle {
+  color: #a1a1a6;
+  background: rgba(255,255,255,0.08);
+}
+
+html.dark #theme-toggle:hover {
+  background: rgba(255,255,255,0.15);
+  color: #f5f5f7;
 }
 
 #edit-btn {
@@ -289,6 +308,14 @@ html.dark .paper-links a:hover {
 }
 
 @media (max-width: 768px) {
+  #profile-photo {
+    display: none;
+  }
+  
+  #intro-section {
+    padding-right: 0;
+  }
+  
   .container {
     max-width: 100%;
     padding: 0 20px;
@@ -310,16 +337,11 @@ html.dark .paper-links a:hover {
   .markdown-section h3 {
     font-size: 1.4em;
   }
-  
-  #profile-photo {
-    width: 130px;
-    height: 162px;
-  }
 }
 
 @media (max-width: 480px) {
   body {
-    font-size: 16px;
+    font-size: 14px;
   }
   
   .container {
@@ -348,29 +370,15 @@ html.dark .paper-links a:hover {
     font-size: 1.1em;
   }
   
-  #profile-photo {
-    width: 100px;
-    height: 125px;
-    float: none;
-    margin: 0 auto 16px;
-    display: block;
-  }
-  
   .paper-links a {
     display: block;
     margin: 4px 0;
     text-align: center;
   }
   
-  #theme-toggle {
-    bottom: 10px;
-    right: 10px;
-    padding: 6px 12px;
-  }
-  
   #edit-btn {
     bottom: 10px;
-    right: 70px;
+    right: 10px;
     padding: 6px 12px;
   }
 }
