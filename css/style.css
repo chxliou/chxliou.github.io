@@ -4,11 +4,21 @@
 }
 
 .item {
-  flex: 1 1 50%; /* 默认双栏布局 */
+  flex: 1 1 50%;
 }
 
-@media (max-width: 1600px) { /* 针对手机屏幕的媒体查询 */
+@media (max-width: 1600px) {
   .item {
-      flex: 1 1 100%; /* 改为单栏布局 */
+      flex: 1 1 100%;
   }
+}
+
+section.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+article.markdown-section {
+  max-width: 100%;
 }
