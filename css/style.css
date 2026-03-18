@@ -1,11 +1,14 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+  font-size: 15px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #f5f5f7;
   margin: 0;
   padding: 0;
   color: #1d1d1f;
+  line-height: 1.47;
+  letter-spacing: 0;
 }
 
 html.dark body {
@@ -14,7 +17,7 @@ html.dark body {
 }
 
 .container {
-  max-width: 720px;
+  max-width: 880px;
   margin: 60px auto;
   padding: 0 32px;
 }
@@ -50,7 +53,7 @@ html.dark .markdown-section::before {
   color: #1d1d1f;
   margin-top: 2.5em;
   margin-bottom: 1em;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
 }
 
 html.dark .markdown-section h3 {
@@ -59,14 +62,18 @@ html.dark .markdown-section h3 {
 
 .markdown-section h3:first-of-type {
   margin-top: 0;
+  font-size: 1.75em;
+  font-weight: 700;
+  letter-spacing: -0.03em;
 }
 
 .markdown-section h4 {
   font-weight: 600;
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: #1d1d1f;
-  margin-top: 1.8em;
-  margin-bottom: 0.5em;
+  margin-top: 1.5em;
+  margin-bottom: 0.25em;
+  letter-spacing: -0.01em;
 }
 
 html.dark .markdown-section h4 {
@@ -74,14 +81,24 @@ html.dark .markdown-section h4 {
 }
 
 .markdown-section p {
-  line-height: 1.7;
-  letter-spacing: 0.01em;
-  margin-bottom: 1.2em;
+  line-height: 1.47;
+  margin-bottom: 1em;
   color: #1d1d1f;
 }
 
 html.dark .markdown-section p {
   color: #f5f5f7;
+}
+
+.markdown-section em,
+.markdown-section i {
+  color: #86868b;
+  font-style: italic;
+}
+
+html.dark .markdown-section em,
+html.dark .markdown-section i {
+  color: #a1a1a6;
 }
 
 .markdown-section a {
@@ -101,20 +118,20 @@ html.dark .markdown-section a {
 .markdown-section ul {
   list-style: none;
   padding-left: 0;
-  line-height: 1.8;
+  line-height: 1.6;
 }
 
 .markdown-section ul li {
   position: relative;
   padding-left: 1.2em;
-  margin-bottom: 0.6em;
+  margin-bottom: 0.5em;
 }
 
 .markdown-section ul li::before {
   content: '';
   position: absolute;
   left: 0;
-  top: 0.7em;
+  top: 0.65em;
   width: 5px;
   height: 5px;
   background: #0071e3;
@@ -199,27 +216,53 @@ html.dark #clustrmaps-container {
   border-top-color: #333;
 }
 
-@media (max-width: 600px) {
-  #profile-photo {
-    float: none;
-    display: block;
-    margin: 0 auto 24px;
-    width: 140px;
-    height: 175px;
-  }
-  
-  .markdown-section {
-    padding: 32px 24px;
-  }
-  
-  .container {
-    margin: 32px auto;
-    padding: 0 16px;
-  }
-  
-  .markdown-section::before {
-    margin: -32px -24px 24px;
-  }
+.paper {
+  margin-bottom: 2.5em;
+  padding-left: 16px;
+  border-left: 3px solid rgba(0,113,227,0.25);
+}
+
+html.dark .paper {
+  border-left-color: rgba(10,132,255,0.3);
+}
+
+.paper h4 {
+  font-size: 1.15em;
+  font-weight: 600;
+  margin: 0 0 0.3em 0;
+  letter-spacing: -0.01em;
+  color: #1d1d1f;
+}
+
+html.dark .paper h4 {
+  color: #f5f5f7;
+}
+
+.paper .authors {
+  font-size: 0.95em;
+  line-height: 1.35;
+  margin-bottom: 0.25em;
+  color: #333;
+}
+
+html.dark .paper .authors {
+  color: #e5e5e5;
+}
+
+.paper .venue {
+  font-size: 0.9em;
+  font-style: italic;
+  color: #86868b;
+  margin-bottom: 0.5em;
+}
+
+html.dark .paper .venue {
+  color: #a1a1a6;
+}
+
+.paper .links {
+  margin-top: 0.5em;
+  margin-bottom: 0;
 }
 
 .paper-links a {
@@ -228,7 +271,7 @@ html.dark #clustrmaps-container {
   margin: 4px 4px 4px 0;
   background: rgba(0,113,227,0.08);
   border-radius: 6px;
-  font-size: 0.9em;
+  font-size: 0.85em;
   transition: background 0.2s ease;
 }
 
@@ -243,6 +286,93 @@ html.dark .paper-links a {
 
 html.dark .paper-links a:hover {
   background: rgba(10,132,255,0.25);
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 40px auto;
+  }
+  
+  .markdown-section {
+    padding: 32px 28px;
+  }
+  
+  .markdown-section::before {
+    margin: -32px -28px 24px;
+  }
+  
+  .markdown-section h3:first-of-type {
+    font-size: 1.6em;
+  }
+  
+  .markdown-section h3 {
+    font-size: 1.4em;
+  }
+  
+  #profile-photo {
+    width: 130px;
+    height: 162px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+  
+  .container {
+    margin: 20px auto;
+    padding: 0 16px;
+  }
+  
+  .markdown-section {
+    padding: 24px 20px;
+    border-radius: 12px;
+  }
+  
+  .markdown-section::before {
+    margin: -24px -20px 20px;
+  }
+  
+  .markdown-section h3:first-of-type {
+    font-size: 1.4em;
+  }
+  
+  .markdown-section h3 {
+    font-size: 1.25em;
+  }
+  
+  .markdown-section h4 {
+    font-size: 1.1em;
+  }
+  
+  #profile-photo {
+    width: 100px;
+    height: 125px;
+    float: none;
+    margin: 0 auto 16px;
+    display: block;
+  }
+  
+  .paper-links a {
+    display: block;
+    margin: 4px 0;
+    text-align: center;
+  }
+  
+  #theme-toggle {
+    bottom: 10px;
+    right: 10px;
+    padding: 6px 12px;
+  }
+  
+  #edit-btn {
+    bottom: 10px;
+    right: 70px;
+    padding: 6px 12px;
+  }
 }
 
 .sidebar,

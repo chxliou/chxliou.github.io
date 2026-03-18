@@ -55,25 +55,76 @@
 
       processMarkdown(md) {
         let lines = md.split('\n');
-        let inPaperSection = false;
         let result = [];
+        let inPaperSection = false;
+        let currentPaper = null;
+
+        const parseInline = (text) => {
+          return text
+            .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>')
+            .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+            .replace(/\*([^*]+)\*/g, '<em>$1</em>');
+        };
+
+        const flushPaper = () => {
+          if (currentPaper) {
+            result.push('<div class="paper">');
+            result.push('<h4>' + currentPaper.title + '</h4>');
+            result.push('<p class="authors">' + currentPaper.authors + '</p>');
+            if (currentPaper.venue.length > 0) {
+              result.push('<p class="venue">' + currentPaper.venue.join('<br>') + '</p>');
+            }
+            if (currentPaper.links) {
+              result.push('<p class="links paper-links">' + parseInline(currentPaper.links) + '</p>');
+            }
+            result.push('</div>');
+            currentPaper = null;
+          }
+        };
 
         for (let i = 0; i < lines.length; i++) {
           let line = lines[i];
 
           if (line.startsWith('### Research Papers')) {
             inPaperSection = true;
+            result.push(line);
+            continue;
           } else if (line.startsWith('### ') && inPaperSection) {
+            flushPaper();
             inPaperSection = false;
+            result.push(line);
+            continue;
+          } else if (line.startsWith('---') && inPaperSection) {
+            flushPaper();
+            inPaperSection = false;
+            result.push('<hr>');
+            continue;
           }
 
-          if (inPaperSection && /^\[.*\]\(.*\)/.test(line.trim())) {
-            line = '<span class="paper-links">' + line + '</span>';
+          if (inPaperSection) {
+            if (line.startsWith('#### ')) {
+              flushPaper();
+              currentPaper = {
+                title: line.substring(5),
+                authors: '',
+                venue: [],
+                links: ''
+              };
+            } else if (currentPaper) {
+              if (line.startsWith('<u>') || (line.length > 0 && !line.startsWith('<i>') && !line.startsWith('[') && !currentPaper.authors)) {
+                currentPaper.authors = line;
+              } else if (line.startsWith('<i>')) {
+                currentPaper.venue.push(line);
+              } else if (line.startsWith('[')) {
+                currentPaper.links = line;
+              }
+            }
+          } else {
+            result.push(line);
           }
-
-          result.push(line);
         }
 
+        flushPaper();
         return result.join('\n');
       },
 

@@ -1,4 +1,4 @@
-### Chenxi Liu (he/him)
+### Chenxi Liu
 
 I am a Ph.D. student at the [TMLR Group @ Hong Kong Baptist University](https://github.com/tmlr-group), supervised by [Prof. Bo Han](https://bhanml.github.io/).
 I am currently a visiting student at [MBZUAI](https://mbzuai.ac.ae/research/department/machine-learning-department/), collaborating with [Prof. Kun Zhang](https://www.andrew.cmu.edu/user/kunz1/) and [Dr. Yongqiang Chen](https://lfhase.win/).
@@ -37,7 +37,7 @@ To reveal and leverage causal mechanisms for reliable reasoning and decision-mak
 
 #### Causal Structure Learning for Latent Intervened Non-stationary Data  
 <u>Chenxi Liu</u>, Kun Kuang  
-<i>International Conference on Machine Learning (<b>ICML</b>, 2023.</i>  
+<i>International Conference on Machine Learning (<b>ICML</b>), 2023.</i>
 [Paper](https://proceedings.mlr.press/v202/liu23t) · [Code](https://github.com/chxliou/LIN2023)
 
 ---
