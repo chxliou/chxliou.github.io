@@ -28,23 +28,17 @@ To reveal and leverage causal mechanisms for reliable reasoning and decision-mak
 <u>Chenxi Liu*</u>, Yongqiang Chen*, Tongliang Liu, James Cheng, Bo Han, Kun Zhang  
 <i>In International Conference on Learning Representations (<b>ICLR</b>), 2026.</i>  
 <i>Also in ICLR Workshop on Reasoning and Planning for Large Language Models, 2025.</i>  
-[Paper](https://arxiv.org/abs/2505.12896) ·
-[Project Page](https://causalcoat.github.io/lot.html)
+[Paper](https://arxiv.org/abs/2505.12896) · [Project Page](https://causalcoat.github.io/lot.html)
 
 #### Discovery of the Hidden World with Large Language Models  
 <u>Chenxi Liu*</u>, Yongqiang Chen*, Tongliang Liu, Mingming Gong, James Cheng, Bo Han, Kun Zhang  
 <i>Advances in Neural Information Processing Systems (<b>NeurIPS</b>), 2024.</i>  
-[Paper](https://proceedings.neurips.cc/paper_files/paper/2024/hash/b99a07486702417d3b1bd64ec2cf74ad-Abstract-Conference.html) ·
-[Code](https://github.com/tmlr-group/CausalCOAT) ·
-[Project Page](https://causalcoat.github.io/) ·
-[博客](https://mp.weixin.qq.com/s/Lt2VlHiMiHUlo8hewFJqjQ) ·
-[视频介绍](https://www.bilibili.com/video/BV1vaUNYTEr3/?share_source=copy_web&vd_source=5460ce07d59a3de60388d68621af7f5c&t=3789)
+[Paper](https://proceedings.neurips.cc/paper_files/paper/2024/hash/b99a07486702417d3b1bd64ec2cf74ad-Abstract-Conference.html) · [Code](https://github.com/tmlr-group/CausalCOAT) · [Project Page](https://causalcoat.github.io/) · [博客](https://mp.weixin.qq.com/s/Lt2VlHiMiHUlo8hewFJqjQ) · [视频介绍](https://www.bilibili.com/video/BV1vaUNYTEr3/?share_source=copy_web&vd_source=5460ce07d59a3de60388d68621af7f5c&t=3789)
 
 #### Causal Structure Learning for Latent Intervened Non-stationary Data  
 <u>Chenxi Liu</u>, Kun Kuang  
-<i>International Conference on Machine Learning (<b>ICML</b>), 2023.</i>  
-[Paper](https://proceedings.mlr.press/v202/liu23t) ·
-[Code](https://github.com/chxliou/LIN2023)
+<i>International Conference on Machine Learning (<b>ICML</b>, 2023.</i>  
+[Paper](https://proceedings.mlr.press/v202/liu23t) · [Code](https://github.com/chxliou/LIN2023)
 
 ---
 

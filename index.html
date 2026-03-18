@@ -1,37 +1,27 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Chenxi Liu's homepage</title>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="favicon.png" type="image/png"> 
-    
-    <!-- 1. 先加载 theme.js，它会立即插入正确的 CSS（防止闪烁） -->
-    <script src="scripts/theme.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-    
-    <!-- 其他配置 -->
-    <script src="scripts/plugins.js"></script>
-  </head>
-  <body>
-    <div id="app">Loading...</div>
-    
-    <script>
-      window.$docsify = {
-        loadSidebar: false,
-        maxLevel: 4,
-        subMaxLevel: 3,
-        busuanzi: true,
-        timeUpdater: {
-          text: '<div style="text-align:center;color:gray;">last update time: {docsify-updated}</div>', //">last update time: {docsify-updated}",
-          formatUpdated: "{YYYY}/{MM}/{DD}",
-          whereToPlace: "bottom",  // "top" or "bottom", default to "bottom"
-        },
-        plugins: window.docsifyPlugins || []
-      };
-    </script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Chenxi Liu's Homepage</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="scripts/app.js"></script>
+</head>
+<body>
+  <main class="container">
+    <article id="content" class="markdown-section">
+      <p style="text-align:center;color:#999;">Loading...</p>
+    </article>
+  </main>
+  
+  <button id="theme-toggle" title="Toggle dark/light mode"></button>
+  <a id="edit-btn" href="https://github.com/chxliou/chxliou.github.io/blob/main/README.md" target="_blank">✎ edit</a>
+  
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    App.init();
+  </script>
+</body>
 </html>

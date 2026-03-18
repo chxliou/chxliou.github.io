@@ -1,0 +1,157 @@
+// scripts/app.js
+// Theme management + Markdown rendering + UI components
+
+(function() {
+  const config = {
+    storageKey: 'docsify-theme-preference',
+    readmeUrl: 'README.md'
+  };
+
+  const App = {
+    // Theme Management
+    theme: {
+      isNightTime() {
+        const hour = new Date().getHours();
+        return hour < 6 || hour >= 20;
+      },
+
+      load(isDark) {
+        document.documentElement.classList.remove('light', 'dark');
+        document.documentElement.classList.add(isDark ? 'dark' : 'light');
+        localStorage.setItem(config.storageKey, isDark ? 'dark' : 'light');
+      },
+
+      toggle() {
+        const isDark = document.documentElement.classList.contains('dark');
+        this.load(!isDark);
+        this.updateButton(!isDark);
+      },
+
+      updateButton(isDark) {
+        const btn = document.getElementById('theme-toggle');
+        if (btn) btn.textContent = isDark ? '☀ light' : '☾ dark';
+      },
+
+      init() {
+        const saved = localStorage.getItem(config.storageKey);
+        const shouldDark = saved ? saved === 'dark' : this.isNightTime();
+        this.load(shouldDark);
+        this.updateButton(shouldDark);
+      }
+    },
+
+    // Markdown Rendering
+    render: {
+      async fetchReadme() {
+        try {
+          const response = await fetch(config.readmeUrl);
+          if (!response.ok) throw new Error('Failed to fetch README.md');
+          return await response.text();
+        } catch (error) {
+          console.error(error);
+          return '# Error\nUnable to load content.';
+        }
+      },
+
+      processMarkdown(md) {
+        let lines = md.split('\n');
+        let inPaperSection = false;
+        let result = [];
+
+        for (let i = 0; i < lines.length; i++) {
+          let line = lines[i];
+
+          if (line.startsWith('### Research Papers')) {
+            inPaperSection = true;
+          } else if (line.startsWith('### ') && inPaperSection) {
+            inPaperSection = false;
+          }
+
+          if (inPaperSection && /^\[.*\]\(.*\)/.test(line.trim())) {
+            line = '<span class="paper-links">' + line + '</span>';
+          }
+
+          result.push(line);
+        }
+
+        return result.join('\n');
+      },
+
+      async render() {
+        const content = document.getElementById('content');
+        const md = await this.fetchReadme();
+        const processed = this.processMarkdown(md);
+        content.innerHTML = marked.parse(processed);
+        
+        this.insertPhoto();
+        this.addClustrMaps();
+        this.addLastUpdate();
+      },
+
+      insertPhoto() {
+        const firstH3 = document.querySelector('#content h3:first-of-type');
+        if (!firstH3) return;
+
+        const img = document.createElement('img');
+        img.id = 'profile-photo';
+        img.src = 'assets/cx_photo.jpg';
+        img.alt = 'Chenxi Liu';
+
+        firstH3.parentNode.insertBefore(img, firstH3);
+      },
+
+      addClustrMaps() {
+        const content = document.getElementById('content');
+        
+        const container = document.createElement('div');
+        container.id = 'clustrmaps-container';
+        container.style.cssText = 'text-align:center;margin-top:40px;padding-top:20px;border-top:1px solid #eee;';
+
+        const title = document.createElement('div');
+        title.textContent = 'Visitor Map';
+        title.style.cssText = 'color:#999;font-size:12px;margin-bottom:10px;';
+        container.appendChild(title);
+
+        const script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.id = 'clustrmaps';
+        script.src = '//cdn.clustrmaps.com/map_v2.js?cl=00ffff&w=300&t=tt&d=iChGwJjXnJ_leKcaIR8f0Vsx2y3lUQmjHvWusL573VM&co=0d0221&cmo=bd00ff&cmn=ff2a6d&ct=d1f7ff';
+        container.appendChild(script);
+
+        const lastUpdate = document.createElement('div');
+        lastUpdate.style.cssText = 'color:#999;font-size:12px;margin-top:10px;';
+        const lastMod = new Date(document.lastModified);
+        const formatted = lastMod.getFullYear() + '/' + 
+          String(lastMod.getMonth() + 1).padStart(2, '0') + '/' + 
+          String(lastMod.getDate()).padStart(2, '0');
+        lastUpdate.textContent = 'last update: ' + formatted;
+        container.appendChild(lastUpdate);
+
+        content.appendChild(container);
+      },
+
+      addLastUpdate() {
+        // Already added in addClustrMaps
+      }
+    },
+
+    // UI Components
+    ui: {
+      setupThemeToggle() {
+        const btn = document.getElementById('theme-toggle');
+        if (btn) {
+          btn.onclick = () => App.theme.toggle();
+        }
+      }
+    },
+
+    // Initialize
+    async init() {
+      this.theme.init();
+      this.ui.setupThemeToggle();
+      await this.render.render();
+    }
+  };
+
+  window.App = App;
+})();
