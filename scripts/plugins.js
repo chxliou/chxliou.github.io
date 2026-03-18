@@ -51,5 +51,48 @@
     });
   }
 
-  window.docsifyPlugins = [editButtonPlugin, themeTogglePlugin];
+  // ClustrMaps 访客地图 - 内容底部
+  function clustrMapsPlugin(hook, vm) {
+    hook.doneEach(function() {
+      // 避免重复添加
+      if (document.getElementById('clustrmaps-container')) return;
+      
+      // 找到内容区域
+      const content = document.querySelector('.content');
+      if (!content) return;
+      
+      // 创建容器
+      const container = document.createElement('div');
+      container.id = 'clustrmaps-container';
+      container.style.cssText = 'text-align:center;margin-top:40px;padding-top:20px;border-top:1px solid #eee;';
+      
+      // 添加标题
+      const title = document.createElement('div');
+      title.textContent = 'Visitor Map';
+      title.style.cssText = 'color:#999;font-size:12px;margin-bottom:10px;';
+      container.appendChild(title);
+      
+      // 添加 ClustrMaps 脚本
+      const script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.id = 'clustrmaps';
+      script.src = '//cdn.clustrmaps.com/map_v2.js?cl=00ffff&w=300&t=tt&d=iChGwJjXnJ_leKcaIR8f0Vsx2y3lUQmjHvWusL573VM&co=0d0221&cmo=bd00ff&cmn=ff2a6d&ct=d1f7ff';
+      container.appendChild(script);
+      
+      // 添加 last update
+      const lastUpdate = document.createElement('div');
+      lastUpdate.style.cssText = 'color:#999;font-size:12px;margin-top:10px;';
+      const lastMod = new Date(document.lastModified);
+      const formatted = lastMod.getFullYear() + '/' + 
+        String(lastMod.getMonth() + 1).padStart(2, '0') + '/' + 
+        String(lastMod.getDate()).padStart(2, '0');
+      lastUpdate.textContent = 'last update: ' + formatted;
+      container.appendChild(lastUpdate);
+      
+      // 插入到内容底部
+      content.appendChild(container);
+    });
+  }
+
+  window.docsifyPlugins = [editButtonPlugin, themeTogglePlugin, clustrMapsPlugin];
 })();
