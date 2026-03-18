@@ -1,5 +1,3 @@
-<!-- index.html -->
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -8,25 +6,32 @@
     <title>Chenxi Liu's homepage</title>
     <meta charset="UTF-8" />
     <link rel="icon" href="favicon.png" type="image/png"> 
-    <link
-      rel="stylesheet"
-      href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css"
-    />
+    
+    <!-- 1. 先加载 theme.js，它会立即插入正确的 CSS（防止闪烁） -->
+    <script src="scripts/theme.js"></script>
+    
+    <!-- 其他配置 -->
+    <script src="scripts/plugins.js"></script>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">Loading...</div>
+    
     <script>
       window.$docsify = {
+        loadSidebar: false,
+        maxLevel: 4,
+        subMaxLevel: 3,
         busuanzi: true,
         timeUpdater: {
-          text: '<div style="text-align:center;color:gray;">last update time: {docsify-updated}</div>', //">last update time: {docsify-updated}",
+          text: '<div style="text-align:center;color:gray;">last update time: {docsify-updated}</div>',
           formatUpdated: "{YYYY}/{MM}/{DD}",
-          whereToPlace: "bottom",  // "top" or "bottom", default to "bottom"
+          whereToPlace: "bottom",
         },
-        //...
+        plugins: window.docsifyPlugins || []
       };
     </script>
-    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
     <script src="libs/time-updater.min.js"></script>
     <script src="libs/docsify-busuanzi.min.js"></script>
   </body>

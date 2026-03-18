@@ -1,4 +1,4 @@
-## Chenxi Liu (he/him)
+### Chenxi Liu (he/him)
 
 I am a Ph.D. student at the [TMLR Group @ Hong Kong Baptist University](https://github.com/tmlr-group), supervised by [Prof. Bo Han](https://bhanml.github.io/).
 I am currently a visiting student at [MBZUAI](https://mbzuai.ac.ae/research/department/machine-learning-department/), collaborating with [Prof. Kun Zhang](https://www.andrew.cmu.edu/user/kunz1/) and [Dr. Yongqiang Chen](https://lfhase.win/).
@@ -17,7 +17,7 @@ To reveal and leverage causal mechanisms for reliable reasoning and decision-mak
 
 ---
 
-## Research Papers
+### Research Papers
 
 #### Discovering and Reasoning of Causality in the Hidden World with Large Language Models  
 <u>Chenxi Liu*</u>, Yongqiang Chen*, Tongliang Liu, Mingming Gong, James Cheng, Bo Han, Kun Zhang  
@@ -48,7 +48,7 @@ To reveal and leverage causal mechanisms for reliable reasoning and decision-mak
 
 ---
 
-## Honors & Awards
+### Honors & Awards
 
 - **Teaching Assistant Performance Award**, Hong Kong Baptist University, 2025  
 - **NeurIPS Scholar Award**, 2024  
@@ -59,14 +59,14 @@ To reveal and leverage causal mechanisms for reliable reasoning and decision-mak
 
 ---
 
-## Academic Talks
+### Academic Talks
 
 - **On the Thinking–Language Modeling Gap in Large Language Models** @ CMU CLeaR Group, 2025  
 - **Youth PhD Talk for NeurIPS 2024** @ AI Time (Online), Nov. 13, 2024 [[Video]](https://www.bilibili.com/video/BV1vaUNYTEr3/?share_source=copy_web&vd_source=5460ce07d59a3de60388d68621af7f5c&t=3789)
 
 ---
 
-## Academic Service
+### Academic Service
 
 - **Conference Reviewer** <br>
    ICML, NeurIPS, ICLR, CLeaR, KDD.
@@ -76,7 +76,7 @@ To reveal and leverage causal mechanisms for reliable reasoning and decision-mak
 
 ---
 
-## Teaching
+### Teaching
 <i>(Assistance in following courses)</i>
 
 - **[COMP7125 (Postgraduate)](https://www.comp.hkbu.edu.hk/v1/file/course/COMP7125.pdf)**, *Prompt Engineering for Generative AI*, 2025  
