@@ -307,7 +307,7 @@ html.dark .paper-links a:hover {
   background: rgba(10,132,255,0.25);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   #profile-photo {
     display: none;
   }
