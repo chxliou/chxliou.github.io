@@ -371,9 +371,8 @@ html.dark .paper-links a:hover {
   }
   
   .paper-links a {
-    display: block;
-    margin: 4px 0;
-    text-align: center;
+    display: inline-block;
+    margin: 4px 4px 4px 0;
   }
   
   #edit-btn {
