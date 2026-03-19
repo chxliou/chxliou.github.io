@@ -28,7 +28,7 @@ To reveal and leverage causal mechanisms for reliable reasoning and decision-mak
 <u>Chenxi Liu*</u>, Yongqiang Chen*, Tongliang Liu, James Cheng, Bo Han, Kun Zhang  
 <i>In International Conference on Learning Representations (<b>ICLR</b>), 2026.</i>  
 <i>Also in ICLR Workshop on Reasoning and Planning for Large Language Models, 2025.</i>  
-[Paper](https://arxiv.org/abs/2505.12896) · [Project Page](https://causalcoat.github.io/lot.html)
+[Paper](https://arxiv.org/abs/2505.12896) · [Code](https://github.com/tmlr-group/LoT-2026) · [Project Page](https://causalcoat.github.io/lot.html)
 
 #### Discovery of the Hidden World with Large Language Models  
 <u>Chenxi Liu*</u>, Yongqiang Chen*, Tongliang Liu, Mingming Gong, James Cheng, Bo Han, Kun Zhang  
