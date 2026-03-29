@@ -6,7 +6,7 @@ Previously, I worked closely with [Prof. Kun Kuang](https://kunkuang.github.io/)
 I received my **B.Sc.** and **M.Sc.** degrees in *Statistics* from [SUSTech](https://stat-ds.sustech.edu.cn/?lang=en-us) and [Fudan University](https://math.fudan.edu.cn/mathen/main.htm), respectively.
 
 **Research Vision**  
-To reveal and leverage causal mechanisms for reliable reasoning and decision-making in realistic systems.
+Agentic Discovery with Causal Principles [[COAT](https://arxiv.org/abs/2402.03941v3)], Trustworthy Reasoning [[LoT](https://arxiv.org/abs/2505.12896)], and Scientific Evolution [[CausalEvolve](https://openreview.net/pdf?id=14jSctSh0D)]. 
 
 **Contact**: cscxliu (AT) comp (dot) hkbu (dot) edu (dot) hk  
 **Office**: DLB 625, Hong Kong Baptist University, Kowloon Tong, Hong Kong SAR  
@@ -28,23 +28,32 @@ To reveal and leverage causal mechanisms for reliable reasoning and decision-mak
 <u>Chenxi Liu*</u>, Yongqiang Chen*, Tongliang Liu, James Cheng, Bo Han, Kun Zhang  
 <i>In International Conference on Learning Representations (<b>ICLR</b>), 2026.</i>  
 <i>Also in ICLR Workshop on Reasoning and Planning for Large Language Models, 2025.</i>  
-[Paper](https://arxiv.org/abs/2505.12896) · [Code](https://github.com/tmlr-group/LoT-2026) · [Project Page](https://causalcoat.github.io/lot.html)
+[Paper](https://arxiv.org/abs/2505.12896) [Code](https://github.com/tmlr-group/LoT-2026) [Project Page](https://causalcoat.github.io/lot.html)
+
+#### CausalEvolve: Towards Open-Ended Discovery with Causal Scratchpad
+Yongqiang Chen*, <u>Chenxi Liu*</u>, Zhenhao Chen, Tongliang Liu, Bo Han, Kun Zhang  
+<i>In ICLR Workshop on Recursive Self-Improvement, <b>Spotlight presentation</b>, 2026.</i>
+[Paper](https://openreview.net/pdf?id=14jSctSh0D)
+
+#### CausalGame: Benchmarking Causal Thinking of LLM Agents in Games
+Zhenhao Chen*, Yongqiang Chen*, <u>Chenxi Liu*</u>, Junchi Yu, Philip Torr, Bo Han, Kun Zhang and others  
+<i>In ICLR Workshop on The 2nd Workshop on Foundation Models for Science, 2026.</i>
+[Paper](https://openreview.net/pdf?id=SEFSkn4l6d)
 
 #### Discovery of the Hidden World with Large Language Models  
 <u>Chenxi Liu*</u>, Yongqiang Chen*, Tongliang Liu, Mingming Gong, James Cheng, Bo Han, Kun Zhang  
 <i>Advances in Neural Information Processing Systems (<b>NeurIPS</b>), 2024.</i>  
-[Paper](https://proceedings.neurips.cc/paper_files/paper/2024/hash/b99a07486702417d3b1bd64ec2cf74ad-Abstract-Conference.html) · [Code](https://github.com/tmlr-group/CausalCOAT) · [Project Page](https://causalcoat.github.io/) · [博客](https://mp.weixin.qq.com/s/Lt2VlHiMiHUlo8hewFJqjQ) · [视频介绍](https://www.bilibili.com/video/BV1vaUNYTEr3/?share_source=copy_web&vd_source=5460ce07d59a3de60388d68621af7f5c&t=3789)
+[Paper](https://proceedings.neurips.cc/paper_files/paper/2024/hash/b99a07486702417d3b1bd64ec2cf74ad-Abstract-Conference.html) [Code](https://github.com/tmlr-group/CausalCOAT) [Project Page](https://causalcoat.github.io/) [博客](https://mp.weixin.qq.com/s/Lt2VlHiMiHUlo8hewFJqjQ) [视频介绍](https://www.bilibili.com/video/BV1vaUNYTEr3/?share_source=copy_web&vd_source=5460ce07d59a3de60388d68621af7f5c&t=3789)
 
 #### Causal Structure Learning for Latent Intervened Non-stationary Data  
 <u>Chenxi Liu</u>, Kun Kuang  
 <i>International Conference on Machine Learning (<b>ICML</b>), 2023.</i>
-[Paper](https://proceedings.mlr.press/v202/liu23t) · [Code](https://github.com/chxliou/LIN2023)
+[Paper](https://proceedings.mlr.press/v202/liu23t) [Code](https://github.com/chxliou/LIN2023)
 
 ---
 
 ### Honors & Awards
 
-- **Teaching Assistant Performance Award**, Hong Kong Baptist University, 2025  
 - **NeurIPS Scholar Award**, 2024  
 - **Scholarship from School of Mathematical Science**, Fudan University, 2022  
 - **Outstanding Undergraduate Thesis**, Southern University of Science and Technology, 2021
@@ -63,7 +72,7 @@ To reveal and leverage causal mechanisms for reliable reasoning and decision-mak
 ### Academic Service
 
 - **Conference Reviewer** <br>
-   ICML, NeurIPS, ICLR, CLeaR, KDD.
+   ICML, NeurIPS, ICLR, CLeaR, AISTATS, KDD.
 
 - **Journal Reviewer**  <br>
    JAIR, TNNLS, MLJ, NN, TNNLS.

@@ -69,7 +69,7 @@
         const flushPaper = () => {
           if (currentPaper) {
             result.push('<div class="paper">');
-            result.push('<h4>' + currentPaper.title + '</h4>');
+            result.push('<div class="paper-title"><strong>' + currentPaper.title + '</strong></div>');
             result.push('<p class="authors">' + currentPaper.authors + '</p>');
             if (currentPaper.venue.length > 0) {
               result.push('<p class="venue">' + currentPaper.venue.join('<br>') + '</p>');
