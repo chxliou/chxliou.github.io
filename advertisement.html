@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="Join us as a Research Assistant in Causal Discovery and Open-Ended Scientific Discovery.">
+  <meta name="author" content="Chenxi Liu">
+  <meta property="og:title" content="We're Hiring - TMLR Group">
+  <meta property="og:description" content="Research Assistant positions in LLM-driven Causal Discovery & Open-Ended Scientific Discovery.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://chxliou.github.io/advertisement.html">
+  <title>We're Hiring - TMLR Group</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .hiring-box {
+      border: 2px solid rgba(0, 113, 227, 0.3);
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin: 16px 0 32px 0;
+      background: rgba(0, 113, 227, 0.03);
+      position: relative;
+    }
+    html.dark .hiring-box {
+      border-color: rgba(10, 132, 255, 0.35);
+      background: rgba(10, 132, 255, 0.05);
+    }
+    .hiring-box::before {
+      content: "We're Hiring";
+      position: absolute;
+      top: -14px;
+      left: 20px;
+      background: #fff;
+      padding: 2px 12px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #0071e3;
+      border-radius: 6px;
+      border: 1px solid rgba(0, 113, 227, 0.3);
+    }
+    html.dark .hiring-box::before {
+      background: #1a1a1a;
+      color: #0a84ff;
+      border-color: rgba(10, 132, 255, 0.35);
+    }
+    .hiring-box h3 {
+      margin-top: 0.5em !important;
+      margin-bottom: 0.75em !important;
+      font-size: 1.6em !important;
+    }
+    .hiring-box p {
+      margin-bottom: 0.75em;
+    }
+    .hiring-box ul {
+      margin-bottom: 0.75em;
+    }
+    .hiring-box a {
+      color: #0071e3;
+    }
+    html.dark .hiring-box a {
+      color: #0a84ff;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: #86868b;
+    }
+    .back-link:hover {
+      color: #0071e3;
+    }
+    html.dark .back-link:hover {
+      color: #0a84ff;
+    }
+    .apply-btn {
+      display: inline-block;
+      background: #0071e3;
+      color: #fff !important;
+      padding: 10px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      margin: 12px 0 8px 0;
+      transition: background 0.2s ease;
+    }
+    .apply-btn:hover {
+      background: #005bb5;
+      text-decoration: none;
+    }
+    html.dark .apply-btn {
+      background: #0a84ff;
+    }
+    html.dark .apply-btn:hover {
+      background: #0077ed;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="dag-bg"></canvas>
+  <main class="container">
+    <article id="content" class="markdown-section">
+      <p style="text-align:center;color:#999;">Loading...</p>
+    </article>
+  </main>
+  
+  <button id="theme-toggle" title="Toggle dark/light mode"></button>
+  <a id="edit-btn" href="https://github.com/chxliou/chxliou.github.io/blob/main/advertisement.md" target="_blank">edit</a>
+  
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    (function() {
+      // Theme Management
+      const storageKey = 'docsify-theme-preference';
+      
+      function isNightTime() {
+        const hour = new Date().getHours();
+        return hour < 6 || hour >= 20;
+      }
+      
+      function loadTheme(isDark) {
+        document.documentElement.classList.remove('light', 'dark');
+        document.documentElement.classList.add(isDark ? 'dark' : 'light');
+        localStorage.setItem(storageKey, isDark ? 'dark' : 'light');
+      }
+      
+      function toggleTheme() {
+        const isDark = document.documentElement.classList.contains('dark');
+        loadTheme(!isDark);
+        updateThemeButton(!isDark);
+      }
+      
+      function updateThemeButton(isDark) {
+        const btn = document.getElementById('theme-toggle');
+        if (btn) btn.textContent = isDark ? ' dark' : ' light';
+      }
+      
+      function initTheme() {
+        const saved = localStorage.getItem(storageKey);
+        const shouldDark = saved ? saved === 'dark' : isNightTime();
+        loadTheme(shouldDark);
+        updateThemeButton(shouldDark);
+        
+        const btn = document.getElementById('theme-toggle');
+        if (btn) btn.onclick = toggleTheme;
+      }
+      
+      // Markdown Rendering
+      async function fetchMarkdown() {
+        try {
+          const response = await fetch('advertisement.md');
+          if (!response.ok) throw new Error('Failed to fetch advertisement.md');
+          return await response.text();
+        } catch (error) {
+          console.error(error);
+          return '# Error\nUnable to load content.';
+        }
+      }
+      
+      function addBackLink(content) {
+        return '<a href="index.html" class="back-link"> Back to Homepage</a>\n\n' + content;
+      }
+      
+      async function render() {
+        const contentEl = document.getElementById('content');
+        const md = await fetchMarkdown();
+        const processed = addBackLink(md);
+        contentEl.innerHTML = marked.parse(processed);
+        
+        // Move theme toggle into content card
+        const btn = document.getElementById('theme-toggle');
+        if (btn && contentEl) {
+          contentEl.appendChild(btn);
+        }
+      }
+      
+      // Initialize
+      initTheme();
+      render();
+    })();
+  </script>
+  <script src="scripts/dag-background.js"></script>
+</body>
+</html>

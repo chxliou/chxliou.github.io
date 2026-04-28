@@ -15,6 +15,8 @@ Agentic Discovery with Causal Principles [[COAT](https://arxiv.org/abs/2402.0394
 [Google Scholar](https://scholar.google.com/citations?user=cIGI2jAAAAAJ) ·
 [LinkedIn](https://www.linkedin.com/in/chenxi-liu-b79170147/)
 
+>  🎯 **We're hiring!** TMLR Group is looking for RAs working on LLM-driven Causal Discovery & Open-Ended Scientific Discovery. [Learn more →](https://chxliou.github.io/advertisement.html)
+
 ---
 
 ### Research Papers
