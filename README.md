@@ -24,7 +24,14 @@ Agentic Discovery with Causal Principles [[COAT](https://arxiv.org/abs/2402.0394
 #### Discovering and Reasoning of Causality in the Hidden World with Large Language Models  
 <u>Chenxi Liu*</u>, Yongqiang Chen*, Tongliang Liu, Mingming Gong, James Cheng, Bo Han, Kun Zhang  
 <i>Under submission to the <b>Journal of Machine Learning Research (JMLR)</b>, 2025.</i>  
+<i>Also appear in Singapore ACM SIGKDD Symposium, <b style="color:#ab1400">Oral</b>, 2026.</i>
 [Paper](https://arxiv.org/abs/2402.03941v3)
+
+#### CausalGame: Benchmarking Causal Thinking of LLM Agents in Games
+Zhenhao Chen*, Yongqiang Chen*, <u>Chenxi Liu*</u>, Junchi Yu, Philip Torr, Bo Han, Kun Zhang and others  
+<i>In International Conference on Machine Learning (<b>ICML</b>), <b style="color:#ab1400">Spotlight (2.2%)</b>, 2026.</i>
+<i>Also in ICLR Workshop on The 2nd Workshop on Foundation Models for Science, 2026.</i>
+[Paper](https://openreview.net/pdf?id=SEFSkn4l6d)
 
 #### On the Thinking–Language Modeling Gap in Large Language Models  
 <u>Chenxi Liu*</u>, Yongqiang Chen*, Tongliang Liu, James Cheng, Bo Han, Kun Zhang  
@@ -34,13 +41,8 @@ Agentic Discovery with Causal Principles [[COAT](https://arxiv.org/abs/2402.0394
 
 #### CausalEvolve: Towards Open-Ended Discovery with Causal Scratchpad
 Yongqiang Chen*, <u>Chenxi Liu*</u>, Zhenhao Chen, Tongliang Liu, Bo Han, Kun Zhang  
-<i>In ICLR Workshop on Recursive Self-Improvement, <b>Spotlight presentation</b>, 2026.</i>
+<i>In ICLR Workshop on Recursive Self-Improvement, <b style="color:#ab1400">Spotlight</b>, 2026.</i>
 [Paper](https://openreview.net/pdf?id=14jSctSh0D)
-
-#### CausalGame: Benchmarking Causal Thinking of LLM Agents in Games
-Zhenhao Chen*, Yongqiang Chen*, <u>Chenxi Liu*</u>, Junchi Yu, Philip Torr, Bo Han, Kun Zhang and others  
-<i>In ICLR Workshop on The 2nd Workshop on Foundation Models for Science, 2026.</i>
-[Paper](https://openreview.net/pdf?id=SEFSkn4l6d)
 
 #### Discovery of the Hidden World with Large Language Models  
 <u>Chenxi Liu*</u>, Yongqiang Chen*, Tongliang Liu, Mingming Gong, James Cheng, Bo Han, Kun Zhang  
