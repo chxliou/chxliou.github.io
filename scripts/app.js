@@ -185,7 +185,7 @@
         const script = document.createElement('script');
         script.type = 'text/javascript';
         script.id = 'clustrmaps';
-        script.src = '//cdn.clustrmaps.com/map_v2.js?cl=00ffff&w=300&t=tt&d=iChGwJjXnJ_leKcaIR8f0Vsx2y3lUQmjHvWusL573VM&co=0d0221&cmo=bd00ff&cmn=ff2a6d&ct=d1f7ff';
+        script.src = '//cdn.clustrmaps.com/map_v2.js?cl=00ffff&w=300&t=m&d=iChGwJjXnJ_leKcaIR8f0Vsx2y3lUQmjHvWusL573VM&co=0d0221&cmo=bd00ff&cmn=ff2a6d&ct=d1f7ff';
         container.appendChild(script);
 
         const lastUpdate = document.createElement('div');
