@@ -79,7 +79,7 @@ Yongqiang Chen*, <u>Chenxi Liu*</u>, Zhenhao Chen, Tongliang Liu, Bo Han, Kun Zh
    ICML, NeurIPS, ICLR, CLeaR, AISTATS, KDD.
 
 - **Journal Reviewer**  <br>
-   TPAMI, JAIR, TNNLS, MLJ, NN, TNNLS.
+   TPAMI, JAIR, TNNLS, MLJ, NN.
 
 ---
 
