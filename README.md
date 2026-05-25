@@ -29,7 +29,7 @@ Agentic Discovery with Causal Principles [[COAT](https://arxiv.org/abs/2402.0394
 
 #### CausalGame: Benchmarking Causal Thinking of LLM Agents in Games
 Zhenhao Chen*, Yongqiang Chen*, <u>Chenxi Liu*</u>, Junchi Yu, Philip Torr, Bo Han, Kun Zhang and others  
-<i>In International Conference on Machine Learning (<b>ICML</b>), <b style="color:#ab1400">Spotlight (2.2%)</b>, 2026.</i>
+<i>In International Conference on Machine Learning (<b>ICML</b>), <b style="color:#ab1400">Oral (0.7%)</b>, 2026.</i>
 <i>Also in ICLR Workshop on The 2nd Workshop on Foundation Models for Science, 2026.</i>
 [Paper](https://openreview.net/pdf?id=SEFSkn4l6d)
 
@@ -76,7 +76,7 @@ Yongqiang Chen*, <u>Chenxi Liu*</u>, Zhenhao Chen, Tongliang Liu, Bo Han, Kun Zh
 ### Academic Service
 
 - **Conference Reviewer** <br>
-   ICML, NeurIPS, ICLR, CLeaR, AISTATS, KDD.
+   ICML, NeurIPS, ICLR, CLeaR, AISTATS, UAI, KDD.
 
 - **Journal Reviewer**  <br>
    TPAMI, JAIR, TNNLS, MLJ, NN.
