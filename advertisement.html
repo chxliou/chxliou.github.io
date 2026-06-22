@@ -65,7 +65,7 @@
       display: inline-block;
       margin-bottom: 20px;
       font-size: 14px;
-      color: #86868b;
+      color: #6e6e73;
     }
     .back-link:hover {
       color: #0071e3;
@@ -97,7 +97,7 @@
   </style>
 </head>
 <body>
-  <canvas id="dag-bg"></canvas>
+  <canvas id="dag-bg" aria-hidden="true"></canvas>
   <main class="container">
     <article id="content" class="markdown-section">
       <p style="text-align:center;color:#999;">Loading...</p>
@@ -105,13 +105,13 @@
   </main>
   
   <button id="theme-toggle" title="Toggle dark/light mode"></button>
-  <a id="edit-btn" href="https://github.com/chxliou/chxliou.github.io/blob/main/advertisement.md" target="_blank">edit</a>
+  <a id="edit-btn" href="https://github.com/chxliou/chxliou.github.io/blob/main/advertisement.md" target="_blank">✎ edit</a>
   
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script>
     (function() {
       // Theme Management
-      const storageKey = 'docsify-theme-preference';
+      const storageKey = 'theme-preference';
       
       function isNightTime() {
         const hour = new Date().getHours();
@@ -136,7 +136,15 @@
       }
       
       function initTheme() {
-        const saved = localStorage.getItem(storageKey);
+        let saved = localStorage.getItem(storageKey);
+        if (saved === null) {
+          const legacy = localStorage.getItem('docsify-theme-preference');
+          if (legacy !== null) {
+            localStorage.setItem(storageKey, legacy);
+            localStorage.removeItem('docsify-theme-preference');
+            saved = legacy;
+          }
+        }
         const shouldDark = saved ? saved === 'dark' : isNightTime();
         loadTheme(shouldDark);
         updateThemeButton(shouldDark);

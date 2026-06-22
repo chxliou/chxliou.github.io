@@ -8,6 +8,7 @@
   const ctx = canvas.getContext('2d');
   let width, height;
   let dags = [];
+  let rafId = null;
   
   // Configuration
   const config = {
@@ -286,19 +287,28 @@
   function animate(time) {
     updateDAGs(time);
     render(time);
-    requestAnimationFrame(animate);
+    rafId = requestAnimationFrame(animate);
   }
   
   // Initialize
   function init() {
     resize();
     createDAGs();
-    requestAnimationFrame(animate);
+    rafId = requestAnimationFrame(animate);
   }
   
   window.addEventListener('resize', () => {
     resize();
     createDAGs();
+  });
+  
+  // Pause animation when tab is hidden (saves CPU/battery)
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      if (rafId !== null) { cancelAnimationFrame(rafId); rafId = null; }
+    } else if (rafId === null) {
+      rafId = requestAnimationFrame(animate);
+    }
   });
   
   // Theme change observer

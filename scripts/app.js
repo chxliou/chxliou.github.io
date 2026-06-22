@@ -3,7 +3,7 @@
 
 (function() {
   const config = {
-    storageKey: 'docsify-theme-preference',
+    storageKey: 'theme-preference',
     readmeUrl: 'README.md'
   };
 
@@ -33,7 +33,15 @@
       },
 
       init() {
-        const saved = localStorage.getItem(config.storageKey);
+        let saved = localStorage.getItem(config.storageKey);
+        if (saved === null) {
+          const legacy = localStorage.getItem('docsify-theme-preference');
+          if (legacy !== null) {
+            localStorage.setItem(config.storageKey, legacy);
+            localStorage.removeItem('docsify-theme-preference');
+            saved = legacy;
+          }
+        }
         const shouldDark = saved ? saved === 'dark' : this.isNightTime();
         this.load(shouldDark);
         this.updateButton(shouldDark);
@@ -70,7 +78,7 @@
           if (currentPaper) {
             result.push('<div class="paper">');
             result.push('<div class="paper-title"><strong>' + currentPaper.title + '</strong></div>');
-            result.push('<p class="authors">' + currentPaper.authors + '</p>');
+            result.push('<p class="authors">' + currentPaper.authors.replace(/\*/g, '&#42;') + '</p>');
             if (currentPaper.venue.length > 0) {
               result.push('<p class="venue">' + currentPaper.venue.join('<br>') + '</p>');
             }
@@ -136,7 +144,7 @@
         
         this.insertPhoto();
         this.moveThemeToggle();
-        this.addClustrMaps();
+        this.addFooter();
       },
 
       moveThemeToggle() {
@@ -170,34 +178,16 @@
         introWrap.appendChild(img);
       },
 
-      addClustrMaps() {
+      addFooter() {
         const content = document.getElementById('content');
-        
-        const container = document.createElement('div');
-        container.id = 'clustrmaps-container';
-        container.style.cssText = 'text-align:center;margin-top:40px;padding-top:20px;border-top:1px solid #eee;';
-
-        const title = document.createElement('div');
-        title.textContent = 'Visitor Map';
-        title.style.cssText = 'color:#999;font-size:12px;margin-bottom:10px;';
-        container.appendChild(title);
-
-        const script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.id = 'clustrmaps';
-        script.src = '//cdn.clustrmaps.com/map_v2.js?cl=00ffff&w=300&t=m&d=iChGwJjXnJ_leKcaIR8f0Vsx2y3lUQmjHvWusL573VM&co=0d0221&cmo=bd00ff&cmn=ff2a6d&ct=d1f7ff';
-        container.appendChild(script);
-
-        const lastUpdate = document.createElement('div');
-        lastUpdate.style.cssText = 'color:#999;font-size:12px;margin-top:10px;';
+        const footer = document.createElement('div');
+        footer.style.cssText = 'text-align:center;margin-top:40px;padding-top:20px;border-top:1px solid #eee;font-size:12px;color:#6e6e73;';
         const lastMod = new Date(document.lastModified);
         const formatted = lastMod.getFullYear() + '/' + 
           String(lastMod.getMonth() + 1).padStart(2, '0') + '/' + 
           String(lastMod.getDate()).padStart(2, '0');
-        lastUpdate.textContent = 'last update: ' + formatted;
-        container.appendChild(lastUpdate);
-
-        content.appendChild(container);
+        footer.textContent = 'last update: ' + formatted;
+        content.appendChild(footer);
       }
     },
 

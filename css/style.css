@@ -104,7 +104,7 @@ html.dark .markdown-section p {
 
 .markdown-section em,
 .markdown-section i {
-  color: #86868b;
+  color: #6e6e73;
   font-style: italic;
 }
 
@@ -192,7 +192,7 @@ html.dark .markdown-section hr {
   top: 16px;
   right: 16px;
   font-size: 14px;
-  color: #86868b;
+  color: #6e6e73;
   background: rgba(0,0,0,0.05);
   padding: 8px 14px;
   border-radius: 8px;
@@ -238,14 +238,6 @@ html.dark #theme-toggle:hover {
   opacity: 0.9;
 }
 
-#clustrmaps-container {
-  border-top: 1px solid #e5e5e5;
-}
-
-html.dark #clustrmaps-container {
-  border-top-color: #333;
-}
-
 .paper {
   margin-bottom: 1.5em;
   padding-left: 16px;
@@ -283,7 +275,7 @@ html.dark .paper .authors {
 .paper .venue {
   font-size: 0.9em;
   font-style: italic;
-  color: #86868b;
+  color: #6e6e73;
   margin-bottom: 0.1em;
   margin-top: 0.1em;
 }
