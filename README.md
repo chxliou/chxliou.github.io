@@ -15,7 +15,7 @@ Agentic Discovery with Causal Principles [[COAT](https://arxiv.org/abs/2402.0394
 [Google Scholar](https://scholar.google.com/citations?user=cIGI2jAAAAAJ) ·
 [LinkedIn](https://www.linkedin.com/in/chenxi-liu-b79170147/)
 
->  🎯 **We're hiring!** TMLR Group is looking for RAs working on LLM-driven Causal Discovery & Open-Ended Scientific Discovery. [Learn more →](https://chxliou.github.io/advertisement.html)
+>  🎯 **We're hiring!** TMLR Group is looking for [Prospective Students](https://bhanml.github.io/prospective_students.pdf) working on Causality & Autonomous Research. [Learn more →](https://chxliou.github.io/advertisement.html)
 
 ---
 
@@ -31,7 +31,7 @@ Agentic Discovery with Causal Principles [[COAT](https://arxiv.org/abs/2402.0394
 Zhenhao Chen*, Yongqiang Chen*, <u>Chenxi Liu*</u>, Junchi Yu, Philip Torr, Bo Han, Kun Zhang and others  
 <i>In International Conference on Machine Learning (<b>ICML</b>), <b style="color:#ab1400">Oral (0.7%)</b>, 2026.</i>
 <i>Also in ICLR Workshop on The 2nd Workshop on Foundation Models for Science, 2026.</i>
-[Paper](https://openreview.net/pdf?id=SEFSkn4l6d)
+[Paper](https://openreview.net/pdf?id=SEFSkn4l6d) [Code](https://github.com/CausalGame/CausalGame) [Website](https://causalgame.github.io/)
 
 #### On the Thinking–Language Modeling Gap in Large Language Models  
 <u>Chenxi Liu*</u>, Yongqiang Chen*, Tongliang Liu, James Cheng, Bo Han, Kun Zhang  

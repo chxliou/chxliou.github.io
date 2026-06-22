@@ -2,7 +2,7 @@
 
 ### We're Hiring: Research Assistants
 
-We work on **LLM-driven Causal Discovery & Open-Ended Scientific Discovery**, pushing the boundaries of LLM Agents in Causal Discovery, Automated Science, and Open-Ended Discovery.
+We work on **Causality & Autonomous Research**, building LLM agents that reason causally and conduct research autonomously — spanning causal discovery, automated science, and open-ended discovery.
 
 **Representative Work:**
 - [CausalGame](https://openreview.net/pdf?id=SEFSkn4l6d): Benchmarking LLM Agents' Causal Thinking in Games
@@ -25,9 +25,9 @@ Remote / Shenzhen (HKBU-Shenzhen Research Institute) / Hong Kong (HKBU Main Camp
 Stanford, CMU, Cornell, UT Austin, RIKEN, MBZUAI, Microsoft Research, NVIDIA, Huawei Noah's Ark Lab, and more.
 
 **Apply:**
-Send your CV to **bhanml@comp.hkbu.edu.hk** and **cscxliu@comp.hkbu.edu.hk** with subject line: `RA Application - Causal & Discovery - [Your Name]`
+Send your CV to **bhanml@comp.hkbu.edu.hk** and **cscxliu@comp.hkbu.edu.hk** with subject line: `RA Application - Causality & Autonomous Research - [Your Name]`
 
-<a href="mailto:bhanml@comp.hkbu.edu.hk,cscxliu@comp.hkbu.edu.hk?subject=RA%20Application%20-%20Causal%20%26%20Discovery%20-%20[NAME]" class="apply-btn">Apply Now</a>
+<a href="mailto:bhanml@comp.hkbu.edu.hk,cscxliu@comp.hkbu.edu.hk?subject=RA%20Application%20-%20Causality%20%26%20Autonomous%20Research%20-%20[NAME]" class="apply-btn">Apply Now</a>
 
 ---
 
