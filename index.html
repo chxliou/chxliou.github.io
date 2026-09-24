@@ -4,32 +4,112 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="description" content="Chenxi Liu - Ph.D. student at HKBU, researching causal inference and large language models.">
+  <meta name="description" content="Chenxi Liu - Ph.D. student at HKBU, researching Autonomous Agents, Causal Discovery, and Recursive Self Improvement.">
   <meta name="author" content="Chenxi Liu">
   <meta property="og:title" content="Chenxi Liu's Homepage">
-  <meta property="og:description" content="Ph.D. student at HKBU, researching causal inference and large language models.">
+  <meta property="og:description" content="Ph.D. student at HKBU, researching Autonomous Agents, Causal Discovery, and Recursive Self Improvement.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://chxliou.github.io">
   <title>Chenxi Liu's Homepage</title>
   <link rel="icon" href="favicon.png" type="image/png">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="scripts/app.js"></script>
+  <link rel="stylesheet" href="css/style.css?v=20260925">
 </head>
 <body>
-  <canvas id="dag-bg" aria-hidden="true"></canvas>
-  <main class="container">
-    <article id="content" class="markdown-section">
-      <p style="text-align:center;color:#999;">Loading...</p>
-    </article>
-  </main>
-  
+
   <button id="theme-toggle" title="Toggle dark/light mode"></button>
-  <a id="edit-btn" href="https://github.com/chxliou/chxliou.github.io/blob/main/README.md" target="_blank">✎ edit</a>
-  
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <script>
-    App.init();
-  </script>
-  <script src="scripts/dag-background.js"></script>
+
+  <main class="page">
+    <header>
+      <h1>Chenxi Liu</h1>
+      <p class="role">PhD Student · <a href="https://bhanml.github.io/group.html" target="_blank" rel="noopener">TMLR Group</a> @ HKBU, advised by <a href="https://bhanml.github.io/" target="_blank" rel="noopener">Bo Han</a></p>
+      <p class="role">Visiting @ <a href="https://mbzuai.ac.ae/research/department/machine-learning-department/" target="_blank" rel="noopener">MBZUAI</a> with <a href="https://www.andrew.cmu.edu/user/kunz1/" target="_blank" rel="noopener">Kun Zhang</a> &amp; <a href="https://lfhase.win/" target="_blank" rel="noopener">Yongqiang Chen</a> · Previously @ <a href="http://www.cs.zju.edu.cn/" target="_blank" rel="noopener">ZJU</a> with <a href="https://kunkuang.github.io/" target="_blank" rel="noopener">Kun Kuang</a></p>
+      <p class="bio">I build <em>Autonomous Agents</em> that discover how their environment works — through <em>Causal Discovery</em> and <em>Recursive Self Improvement</em> — and continually adapt to new tasks.</p>
+      <p class="contact">
+        <a href="mailto:cscxliu@comp.hkbu.edu.hk">email</a> ·
+        <a href="https://scholar.google.com/citations?user=cIGI2jAAAAAJ" target="_blank" rel="noopener">scholar</a> ·
+        <a href="https://github.com/chxliou" target="_blank" rel="noopener">github</a> ·
+        <a href="https://www.linkedin.com/in/chenxi-liu-b79170147/" target="_blank" rel="noopener">linkedin</a>
+      </p>
+    </header>
+
+    <section>
+      <h2>Selected Papers</h2>
+
+      <article class="paper">
+        <h3 class="ptitle"><a href="https://openreview.net/pdf?id=SEFSkn4l6d" target="_blank" rel="noopener">CausalGame: Benchmarking Causal Thinking of LLM Agents in Games</a></h3>
+        <p class="pauth">Zhenhao Chen*, Yongqiang Chen*, <strong class="me">Chenxi Liu*</strong>, Junchi Yu, Xiangchen Song, Zijian Li, Jialin Li, Philip Torr, Bo Han, Kun Zhang</p>
+        <p class="pvenue">ICML 2026 · <span class="tag">Oral (0.7%)</span></p>
+        <p class="plinks"><a href="https://openreview.net/pdf?id=SEFSkn4l6d" target="_blank" rel="noopener">paper</a> <span class="sep">|</span> <a href="https://github.com/CausalGame/CausalGame" target="_blank" rel="noopener">code</a> <span class="sep">|</span> <a href="https://causalgame.github.io/" target="_blank" rel="noopener">website</a></p>
+      </article>
+
+      <article class="paper">
+        <h3 class="ptitle"><a href="https://arxiv.org/abs/2402.03941v3" target="_blank" rel="noopener">Discovering and Reasoning of Causality in the Hidden World with Large Language Models</a></h3>
+        <p class="pauth"><strong class="me">Chenxi Liu*</strong>, Yongqiang Chen*, Tongliang Liu, Mingming Gong, James Cheng, Bo Han, Kun Zhang</p>
+        <p class="pvenue">JMLR (under minor revision) · <span class="tag">SIGKDD Symposium Oral</span> 2026</p>
+        <p class="plinks"><a href="https://arxiv.org/abs/2402.03941v3" target="_blank" rel="noopener">paper</a></p>
+      </article>
+
+      <article class="paper">
+        <h3 class="ptitle"><a href="https://arxiv.org/abs/2505.12896" target="_blank" rel="noopener">On the Thinking–Language Modeling Gap in Large Language Models</a></h3>
+        <p class="pauth"><strong class="me">Chenxi Liu*</strong>, Yongqiang Chen*, Tongliang Liu, James Cheng, Bo Han, Kun Zhang</p>
+        <p class="pvenue">ICLR 2026</p>
+        <p class="plinks"><a href="https://arxiv.org/abs/2505.12896" target="_blank" rel="noopener">paper</a> <span class="sep">|</span> <a href="https://github.com/tmlr-group/LoT-2026" target="_blank" rel="noopener">code</a> <span class="sep">|</span> <a href="https://causalcoat.github.io/lot.html" target="_blank" rel="noopener">page</a></p>
+      </article>
+
+      <article class="paper">
+        <h3 class="ptitle"><a href="https://openreview.net/pdf?id=14jSctSh0D" target="_blank" rel="noopener">CausalEvolve: Towards Open-Ended Discovery with Causal Scratchpad</a></h3>
+        <p class="pauth">Yongqiang Chen*, <strong class="me">Chenxi Liu*</strong>, Zhenhao Chen, Tongliang Liu, Bo Han, Kun Zhang</p>
+        <p class="pvenue">ICLR 2026 Workshop on Recursive Self-Improvement · <span class="tag">Spotlight</span></p>
+        <p class="plinks"><a href="https://openreview.net/pdf?id=14jSctSh0D" target="_blank" rel="noopener">paper</a></p>
+      </article>
+
+      <article class="paper">
+        <h3 class="ptitle"><a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/b99a07486702417d3b1bd64ec2cf74ad-Abstract-Conference.html" target="_blank" rel="noopener">Discovery of the Hidden World with Large Language Models</a></h3>
+        <p class="pauth"><strong class="me">Chenxi Liu*</strong>, Yongqiang Chen*, Tongliang Liu, Mingming Gong, James Cheng, Bo Han, Kun Zhang</p>
+        <p class="pvenue">NeurIPS 2024</p>
+        <p class="plinks"><a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/b99a07486702417d3b1bd64ec2cf74ad-Abstract-Conference.html" target="_blank" rel="noopener">paper</a> <span class="sep">|</span> <a href="https://github.com/tmlr-group/CausalCOAT" target="_blank" rel="noopener">code</a> <span class="sep">|</span> <a href="https://causalcoat.github.io/" target="_blank" rel="noopener">page</a> <span class="sep">|</span> <a href="https://mp.weixin.qq.com/s/Lt2VlHiMiHUlo8hewFJqjQ" target="_blank" rel="noopener">博客</a> <span class="sep">|</span> <a href="https://www.bilibili.com/video/BV1vaUNYTEr3/" target="_blank" rel="noopener">视频</a></p>
+      </article>
+
+      <article class="paper">
+        <h3 class="ptitle"><a href="https://proceedings.mlr.press/v202/liu23t" target="_blank" rel="noopener">Causal Structure Learning for Latent Intervened Non-stationary Data</a></h3>
+        <p class="pauth"><strong class="me">Chenxi Liu</strong>, Kun Kuang</p>
+        <p class="pvenue">ICML 2023</p>
+        <p class="plinks"><a href="https://proceedings.mlr.press/v202/liu23t" target="_blank" rel="noopener">paper</a> <span class="sep">|</span> <a href="https://github.com/chxliou/LIN2023" target="_blank" rel="noopener">code</a></p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Honors</h2>
+      <ul class="items">
+        <li>NeurIPS Scholar Award <span class="yr">2024</span></li>
+        <li>Scholarship, School of Mathematical Sciences, Fudan University <span class="yr">2022</span></li>
+        <li>Outstanding Undergraduate Thesis, SUSTech <span class="yr">2021</span></li>
+        <li>First Prize, National Olympiad in Informatics in Provinces (NOIP) <span class="yr">2015</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Talks</h2>
+      <ul class="items">
+        <li>Youth PhD Talk for ICLR 2026 @ AI Time <span class="yr">2026</span></li>
+        <li>Thinking–Language Modeling Gap @ CMU CLeaR Group <span class="yr">2025</span></li>
+        <li>Youth PhD Talk for NeurIPS 2024 @ AI Time <span class="yr">2024</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Service &amp; Teaching</h2>
+      <ul class="items">
+        <li><span class="plain">Reviewer: ICML · NeurIPS · ICLR · AISTATS · UAI · CLeaR · KDD; TPAMI · JAIR · TNNLS · MLJ · Neural Networks</span></li>
+        <li><span class="plain">TA: COMP7125 Prompt Engineering for Generative AI (2025) · COMP2865 Fundamentals of Data Analysis (2024)</span></li>
+      </ul>
+    </section>
+
+    <p class="page-footer">last update: <span id="last-update"></span></p>
+  </main>
+
+  <a id="edit-btn" href="https://github.com/chxliou/chxliou.github.io/blob/main/index.html" target="_blank" rel="noopener">✎ edit</a>
+
+  <script src="scripts/app.js?v=20260925"></script>
 </body>
 </html>

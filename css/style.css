@@ -1,221 +1,194 @@
+/* ==========================================================================
+   Design D — 极简衬线纯白 (minimal serif on white)
+   Single-column scholarly homepage. Colors are tokens so dark mode
+   (html.dark, applied by scripts/app.js) only swaps variables.
+   ========================================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, "Times New Roman", serif;
+}
+
+/* ---- color tokens ---- */
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
-  font-size: 15px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: #f5f5f7;
+  --bg: #ffffff; --card: #ffffff;
+  --ink: #26221c; --ink2: #6b6353; --ink3: #8a8171;
+  --link: #14508c; --tag: #8c2f24;
+  --line: #e7e3da; --panel: #f5f0e4;
+  --accent: #8a6d3b; --accent2: #b08d57;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 16px;
+  line-height: 1.7;
   margin: 0;
   padding: 0;
-  color: #1d1d1f;
-  line-height: 1.47;
-  letter-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html.dark body {
-  background: #000;
-  color: #f5f5f7;
+  --bg: #0d1117; --card: #11161c;
+  --ink: #e6edf3; --ink2: #9aa7b3; --ink3: #6e7b87;
+  --link: #58a6ff; --tag: #ff7b72;
+  --line: #263040; --panel: #161b22;
+  --accent: #4493f8; --accent2: #56d4dd;
 }
 
-/* DAG Background Canvas */
-#dag-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  pointer-events: none;
+/* secondary page (advertisement) sits on a tinted background */
+body.ad { --bg: #f5f5f7; }
+html.dark body.ad { --bg: #0d1117; }
+
+a { text-decoration: none; }
+
+::selection { background: rgba(20, 80, 140, 0.18); }
+html.dark ::selection { background: rgba(88, 166, 255, 0.30); }
+
+:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+  border-radius: 4px;
 }
 
-.container {
-  max-width: 880px;
-  margin: 60px auto;
-  padding: 0 32px;
+/* ==========================================================================
+   Homepage (index.html)
+   ========================================================================== */
+
+.page {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 92px 28px 130px;
 }
 
-.markdown-section {
-  position: relative;
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-  padding: 48px 56px;
-}
-
-html.dark .markdown-section {
-  background: #1a1a1a;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.3);
-}
-
-.markdown-section::before {
-  content: '';
-  display: block;
-  height: 2px;
-  background: linear-gradient(90deg, #0071e3, #00c7be, #34c759);
-  border-radius: 2px;
-  margin: -48px -56px 32px;
-}
-
-html.dark .markdown-section::before {
-  background: linear-gradient(90deg, #0a84ff, #64d2ff, #30d158);
-}
-
-.markdown-section h3 {
+.page h1 {
+  font-size: 34px;
   font-weight: 600;
-  font-size: 1.5em;
-  color: #1d1d1f;
-  margin-top: 2.5em;
-  margin-bottom: 1em;
-  letter-spacing: -0.025em;
+  font-variant: small-caps;
+  letter-spacing: 0.05em;
+  margin: 0 0 12px;
 }
 
-html.dark .markdown-section h3 {
-  color: #f5f5f7;
+.role { margin: 0 0 5px; color: var(--ink2); font-size: 15.5px; }
+.role a, .contact a, .plinks a { color: var(--link); }
+
+.bio {
+  margin: 28px 0 20px;
+  font-size: 17px;
+  line-height: 1.8;
+  text-wrap: pretty;
 }
 
-.markdown-section h3:first-of-type {
-  margin-top: 0;
-  font-size: 1.75em;
+.contact {
+  margin: 0 0 10px;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  font-variant: all-small-caps;
+}
+
+.page section { margin-top: 58px; }
+
+.page h2 {
+  font-size: 16px;
+  font-weight: 600;
+  font-variant: small-caps;
+  letter-spacing: 0.14em;
+  color: var(--ink3);
+  margin: 0 0 10px;
+}
+
+/* paper entry: title / authors / [venue . . . links] */
+.paper {
+  padding: 15px 0;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  row-gap: 3px;
+  align-items: baseline;
+}
+
+.paper .ptitle {
+  grid-column: 1 / -1;
+  font-size: 16.5px;
   font-weight: 700;
-  letter-spacing: -0.03em;
+  font-style: italic;
+  margin: 0 0 2px;
+  text-wrap: balance;
 }
 
-.markdown-section h4 {
-  font-weight: 600;
-  font-size: 1.2em;
-  color: #1d1d1f;
-  margin-top: 1.5em;
-  margin-bottom: 0.25em;
-  letter-spacing: -0.01em;
+.paper .ptitle a { color: var(--ink); }
+.paper .ptitle a:hover { color: var(--link); }
+
+.paper .pauth {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 13.5px;
+  color: var(--ink2);
+  line-height: 1.55;
 }
 
-html.dark .markdown-section h4 {
-  color: #f5f5f7;
-}
-
-.markdown-section p {
-  line-height: 1.47;
-  margin-bottom: 1em;
-  color: #1d1d1f;
-}
-
-html.dark .markdown-section p {
-  color: #f5f5f7;
-}
-
-.markdown-section em,
-.markdown-section i {
-  color: #6e6e73;
+.paper .pvenue {
+  grid-column: 1;
+  margin: 0;
+  font-size: 14px;
+  color: var(--ink2);
   font-style: italic;
 }
 
-html.dark .markdown-section em,
-html.dark .markdown-section i {
-  color: #a1a1a6;
+.paper .plinks {
+  grid-column: 2;
+  justify-self: end;
+  margin: 0;
+  font-size: 14px;
 }
 
-.markdown-section a {
-  color: #0071e3;
-  text-decoration: none;
-  transition: color 0.2s ease;
+.paper .plinks a {
+  font-variant: all-small-caps;
+  letter-spacing: 0.09em;
+  font-size: 14px;
 }
 
-html.dark .markdown-section a {
-  color: #0a84ff;
-}
+.paper .plinks a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
-.markdown-section a:hover {
-  text-decoration: underline;
-}
+.paper .tag { color: var(--tag); font-style: italic; }
 
-.markdown-section ul {
-  list-style: none;
-  padding-left: 0;
-  line-height: 1.6;
+/* honors / talks / service lists: year pushed to the right */
+.items { list-style: none; margin: 0; padding: 0; font-size: 15px; }
+.items li {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 3px 0;
+  margin: 0;
 }
+.items .yr { color: var(--ink3); font-size: 13.5px; flex: none; padding-left: 12px; }
+.items .plain { margin: 0 0 8px; }
 
-.markdown-section ul li {
-  position: relative;
-  padding-left: 1.2em;
-  margin-bottom: 0.5em;
-}
-
-.markdown-section ul li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0.65em;
-  width: 5px;
-  height: 5px;
-  background: #0071e3;
-  border-radius: 50%;
-}
-
-html.dark .markdown-section ul li::before {
-  background: #0a84ff;
-}
-
-.markdown-section hr {
-  border: none;
-  height: 1px;
-  background: #e5e5e5;
-  margin: 2em 0;
-}
-
-html.dark .markdown-section hr {
-  background: #333;
-}
-
-.markdown-section strong {
-  font-weight: 600;
-}
-
-#intro-section {
-  position: relative;
-  padding-right: 180px;
-  min-height: 200px;
-}
-
-#profile-photo {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 160px;
-  height: 200px;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  object-fit: cover;
-}
+/* ==========================================================================
+   Shared chrome: theme toggle, edit button, footer
+   ========================================================================== */
 
 #theme-toggle {
-  position: absolute;
+  position: fixed;
   top: 16px;
   right: 16px;
-  font-size: 14px;
-  color: #6e6e73;
-  background: rgba(0,0,0,0.05);
-  padding: 8px 14px;
-  border-radius: 8px;
+  font-family: var(--serif);
+  font-size: 13px;
+  color: var(--ink2);
+  background: var(--bg);
+  border: 1px solid var(--line);
+  padding: 6px 14px;
+  border-radius: 999px;
   cursor: pointer;
-  border: none;
-  font-family: inherit;
-  transition: all 0.2s ease;
   z-index: 10;
+  transition: border-color 0.2s ease, color 0.2s ease;
 }
 
 #theme-toggle:hover {
-  background: rgba(0,0,0,0.1);
-  color: #1d1d1f;
-}
-
-html.dark #theme-toggle {
-  color: #a1a1a6;
-  background: rgba(255,255,255,0.08);
-}
-
-html.dark #theme-toggle:hover {
-  background: rgba(255,255,255,0.15);
-  color: #f5f5f7;
+  border-color: var(--link);
+  color: var(--link);
 }
 
 #edit-btn {
@@ -224,202 +197,36 @@ html.dark #theme-toggle:hover {
   right: 15px;
   opacity: 0.15;
   font-size: 13px;
-  color: #666;
+  color: var(--ink2);
   text-decoration: none;
-  z-index: 1000;
-  transition: opacity 0.3s;
-  background: rgba(128,128,128,0.1);
+  background: rgba(128, 128, 128, 0.1);
   padding: 4px 10px;
   border-radius: 6px;
-  cursor: pointer;
+  transition: opacity 0.3s;
 }
 
-#edit-btn:hover {
-  opacity: 0.9;
+#edit-btn:hover { opacity: 0.9; }
+
+.page-footer {
+  margin-top: 64px;
+  font-size: 13px;
+  color: var(--ink3);
+  text-align: left;
 }
 
-.paper {
-  margin-bottom: 1.5em;
-  padding-left: 16px;
-  border-left: 3px solid rgba(0,113,227,0.25);
-}
+/* ==========================================================================
+   Secondary pages (advertisement.html) — markdown-rendered card
+   ========================================================================== */
 
-html.dark .paper {
-  border-left-color: rgba(10,132,255,0.3);
-}
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
 
-.paper-title {
-  font-size: 1.05em;
-  font-weight: 700;
-  margin: 0 0 0.2em 0;
-  letter-spacing: -0.01em;
-  color: #1d1d1f;
-}
-
-html.dark .paper-title {
-  color: #f5f5f7;
-}
-
-.paper .authors {
-  font-size: 0.95em;
-  line-height: 1.35;
-  margin-bottom: 0.1em;
-  margin-top: 0.1em;
-  color: #333;
-}
-
-html.dark .paper .authors {
-  color: #e5e5e5;
-}
-
-.paper .venue {
-  font-size: 0.9em;
-  font-style: italic;
-  color: #6e6e73;
-  margin-bottom: 0.1em;
-  margin-top: 0.1em;
-}
-
-html.dark .paper .venue {
-  color: #a1a1a6;
-}
-
-.paper .links {
-  margin-top: 0.2em;
-  margin-bottom: 0;
-}
-
-.paper-links a {
-  display: inline-block;
-  padding: 2px 8px;
-  margin: 2px 4px 2px 0;
-  background: rgba(0,113,227,0.08);
-  border-radius: 6px;
-  font-size: 0.85em;
-  transition: background 0.2s ease;
-}
-
-html.dark .paper-links a {
-  background: rgba(10,132,255,0.15);
-}
-
-.paper-links a:hover {
-  background: rgba(0,113,227,0.15);
-  text-decoration: none;
-}
-
-html.dark .paper-links a:hover {
-  background: rgba(10,132,255,0.25);
-}
-
-@media (max-width: 600px) {
-  #profile-photo {
-    display: none;
-  }
-  
-  #intro-section {
-    padding-right: 0;
-  }
-  
-  .container {
-    max-width: 100%;
-    padding: 0 20px;
-    margin: 40px auto;
-  }
-  
-  .markdown-section {
-    padding: 32px 28px;
-  }
-  
-  .markdown-section::before {
-    margin: -32px -28px 24px;
-  }
-  
-  .markdown-section h3:first-of-type {
-    font-size: 1.6em;
-  }
-  
-  .markdown-section h3 {
-    font-size: 1.4em;
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    font-size: 14px;
-  }
-  
-  .container {
-    margin: 20px auto;
-    padding: 0 16px;
-  }
-  
-  .markdown-section {
-    padding: 24px 20px;
-    border-radius: 12px;
-  }
-  
-  .markdown-section::before {
-    margin: -24px -20px 20px;
-  }
-  
-  .markdown-section h3:first-of-type {
-    font-size: 1.4em;
-  }
-  
-  .markdown-section h3 {
-    font-size: 1.25em;
-  }
-  
-  .markdown-section h4 {
-    font-size: 1.1em;
-  }
-  
-  .paper-links a {
-    display: inline-block;
-    margin: 4px 4px 4px 0;
-  }
-  
-  #edit-btn {
-    bottom: 10px;
-    right: 10px;
-    padding: 6px 12px;
-  }
-}
-
-.sidebar,
-.sidebar-toggle {
-  display: none !important;
-}
-
-/* Blockquote - hiring notice */
-.markdown-section blockquote {
-  border-left: 4px solid #0071e3;
-  background: rgba(0, 113, 227, 0.06);
-  padding: 12px 16px;
-  margin: 16px 0;
-  border-radius: 0 8px 8px 0;
-}
-
-html.dark .markdown-section blockquote {
-  border-left-color: #0a84ff;
-  background: rgba(10, 132, 255, 0.1);
-}
-
-.markdown-section blockquote p {
-  margin: 0;
-  color: #1d1d1f;
-}
-
-html.dark .markdown-section blockquote p {
-  color: #f5f5f7;
-}
-
-.markdown-section blockquote a {
-  color: #0071e3;
-  font-weight: 500;
-}
-
-html.dark .markdown-section blockquote a {
-  color: #0a84ff;
+@media (max-width: 640px) {
+  .page { padding: 64px 22px 120px; }
+  .page h1 { font-size: 29px; }
+  .paper { grid-template-columns: 1fr; }
+  .paper .plinks { grid-column: 1; justify-self: start; }
+  .container { margin: 24px auto; }
+  .markdown-section { padding: 30px 24px 28px; }
 }

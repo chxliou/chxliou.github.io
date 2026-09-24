@@ -1,91 +1,63 @@
 ### Chenxi Liu
 
-I am a Ph.D. student at the [TMLR Group @ Hong Kong Baptist University](https://github.com/tmlr-group), supervised by [Prof. Bo Han](https://bhanml.github.io/).
-I am currently a visiting student at [MBZUAI](https://mbzuai.ac.ae/research/department/machine-learning-department/), collaborating with [Prof. Kun Zhang](https://www.andrew.cmu.edu/user/kunz1/) and [Dr. Yongqiang Chen](https://lfhase.win/).
-Previously, I worked closely with [Prof. Kun Kuang](https://kunkuang.github.io/) at [Zhejiang University](http://www.cs.zju.edu.cn/).
-I received my **B.Sc.** and **M.Sc.** degrees in *Statistics* from [SUSTech](https://stat-ds.sustech.edu.cn/?lang=en-us) and [Fudan University](https://math.fudan.edu.cn/mathen/main.htm), respectively.
+PhD Student · [TMLR Group](https://bhanml.github.io/group.html) @ HKBU, advised by [Prof. Bo Han](https://bhanml.github.io/)
+Visiting @ [MBZUAI](https://mbzuai.ac.ae/research/department/machine-learning-department/) with [Kun Zhang](https://www.andrew.cmu.edu/user/kunz1/) & [Yongqiang Chen](https://lfhase.win/)
+Previously @ [ZJU](http://www.cs.zju.edu.cn/) with [Kun Kuang](https://kunkuang.github.io/)
 
-**Research Vision**  
-Agentic Discovery with Causal Principles [[COAT](https://arxiv.org/abs/2402.03941v3)], Trustworthy Reasoning [[LoT](https://arxiv.org/abs/2505.12896)], and Scientific Evolution [[CausalEvolve](https://openreview.net/pdf?id=14jSctSh0D)]. 
+I build *Autonomous Agents* that discover how their environment works — through *Causal Discovery* and *Recursive Self Improvement* — and continually adapt to new tasks.
 
-**Contact**: cscxliu (AT) comp (dot) hkbu (dot) edu (dot) hk  
-**Office**: DLB 625, Hong Kong Baptist University, Kowloon Tong, Hong Kong SAR  
-
-[GitHub](https://github.com/chxliou) ·
-[Google Scholar](https://scholar.google.com/citations?user=cIGI2jAAAAAJ) ·
-[LinkedIn](https://www.linkedin.com/in/chenxi-liu-b79170147/)
-
->  🎯 **We're hiring!** TMLR Group is looking for [Prospective Students](https://bhanml.github.io/prospective_students.pdf) working on Causality & Autonomous Research. [Learn more →](https://chxliou.github.io/advertisement.html)
+[email](mailto:cscxliu@comp.hkbu.edu.hk) · [scholar](https://scholar.google.com/citations?user=cIGI2jAAAAAJ) · [github](https://github.com/chxliou) · [linkedin](https://www.linkedin.com/in/chenxi-liu-b79170147/)
 
 ---
 
-### Research Papers
+### Selected Papers
 
-#### Discovering and Reasoning of Causality in the Hidden World with Large Language Models  
-<u>Chenxi Liu*</u>, Yongqiang Chen*, Tongliang Liu, Mingming Gong, James Cheng, Bo Han, Kun Zhang  
-<i>Under submission to the <b>Journal of Machine Learning Research (JMLR)</b>, 2025.</i>  
-<i>Also appear in Singapore ACM SIGKDD Symposium, <b style="color:#ab1400">Oral</b>, 2026.</i>
-[Paper](https://arxiv.org/abs/2402.03941v3)
+- ***CausalGame: Benchmarking Causal Thinking of LLM Agents in Games***  
+  Zhenhao Chen*, Yongqiang Chen*, **Chenxi Liu***, Junchi Yu, Xiangchen Song, Zijian Li, Jialin Li, Philip Torr, Bo Han, Kun Zhang  
+  *ICML 2026 · **Oral (0.7%)***  
+  [paper](https://openreview.net/pdf?id=SEFSkn4l6d) | [code](https://github.com/CausalGame/CausalGame) | [website](https://causalgame.github.io/)
 
-#### CausalGame: Benchmarking Causal Thinking of LLM Agents in Games
-Zhenhao Chen*, Yongqiang Chen*, <u>Chenxi Liu*</u>, Junchi Yu, Philip Torr, Bo Han, Kun Zhang and others  
-<i>In International Conference on Machine Learning (<b>ICML</b>), <b style="color:#ab1400">Oral (0.7%)</b>, 2026.</i>
-<i>Also in ICLR Workshop on The 2nd Workshop on Foundation Models for Science, 2026.</i>
-[Paper](https://openreview.net/pdf?id=SEFSkn4l6d) [Code](https://github.com/CausalGame/CausalGame) [Website](https://causalgame.github.io/)
+- ***Discovering and Reasoning of Causality in the Hidden World with Large Language Models***  
+  **Chenxi Liu***, Yongqiang Chen*, Tongliang Liu, Mingming Gong, James Cheng, Bo Han, Kun Zhang  
+  *JMLR (under minor revision) · **SIGKDD Symposium Oral** 2026*  
+  [paper](https://arxiv.org/abs/2402.03941v3)
 
-#### On the Thinking–Language Modeling Gap in Large Language Models  
-<u>Chenxi Liu*</u>, Yongqiang Chen*, Tongliang Liu, James Cheng, Bo Han, Kun Zhang  
-<i>In International Conference on Learning Representations (<b>ICLR</b>), 2026.</i>  
-<i>Also in ICLR Workshop on Reasoning and Planning for Large Language Models, 2025.</i>  
-[Paper](https://arxiv.org/abs/2505.12896) [Code](https://github.com/tmlr-group/LoT-2026) [Project Page](https://causalcoat.github.io/lot.html)
+- ***On the Thinking–Language Modeling Gap in Large Language Models***  
+  **Chenxi Liu***, Yongqiang Chen*, Tongliang Liu, James Cheng, Bo Han, Kun Zhang  
+  *ICLR 2026*  
+  [paper](https://arxiv.org/abs/2505.12896) | [code](https://github.com/tmlr-group/LoT-2026) | [page](https://causalcoat.github.io/lot.html)
 
-#### CausalEvolve: Towards Open-Ended Discovery with Causal Scratchpad
-Yongqiang Chen*, <u>Chenxi Liu*</u>, Zhenhao Chen, Tongliang Liu, Bo Han, Kun Zhang  
-<i>In ICLR Workshop on Recursive Self-Improvement, <b style="color:#ab1400">Spotlight</b>, 2026.</i>
-[Paper](https://openreview.net/pdf?id=14jSctSh0D)
+- ***CausalEvolve: Towards Open-Ended Discovery with Causal Scratchpad***  
+  Yongqiang Chen*, **Chenxi Liu***, Zhenhao Chen, Tongliang Liu, Bo Han, Kun Zhang  
+  *ICLR 2026 Workshop on Recursive Self-Improvement · **Spotlight***  
+  [paper](https://openreview.net/pdf?id=14jSctSh0D)
 
-#### Discovery of the Hidden World with Large Language Models  
-<u>Chenxi Liu*</u>, Yongqiang Chen*, Tongliang Liu, Mingming Gong, James Cheng, Bo Han, Kun Zhang  
-<i>Advances in Neural Information Processing Systems (<b>NeurIPS</b>), 2024.</i>  
-[Paper](https://proceedings.neurips.cc/paper_files/paper/2024/hash/b99a07486702417d3b1bd64ec2cf74ad-Abstract-Conference.html) [Code](https://github.com/tmlr-group/CausalCOAT) [Project Page](https://causalcoat.github.io/) [博客](https://mp.weixin.qq.com/s/Lt2VlHiMiHUlo8hewFJqjQ) [视频介绍](https://www.bilibili.com/video/BV1vaUNYTEr3/?share_source=copy_web&vd_source=5460ce07d59a3de60388d68621af7f5c&t=3789)
+- ***Discovery of the Hidden World with Large Language Models***  
+  **Chenxi Liu***, Yongqiang Chen*, Tongliang Liu, Mingming Gong, James Cheng, Bo Han, Kun Zhang  
+  *NeurIPS 2024*  
+  [paper](https://proceedings.neurips.cc/paper_files/paper/2024/hash/b99a07486702417d3b1bd64ec2cf74ad-Abstract-Conference.html) | [code](https://github.com/tmlr-group/CausalCOAT) | [page](https://causalcoat.github.io/) | [博客](https://mp.weixin.qq.com/s/Lt2VlHiMiHUlo8hewFJqjQ) | [视频](https://www.bilibili.com/video/BV1vaUNYTEr3/)
 
-#### Causal Structure Learning for Latent Intervened Non-stationary Data  
-<u>Chenxi Liu</u>, Kun Kuang  
-<i>International Conference on Machine Learning (<b>ICML</b>), 2023.</i>
-[Paper](https://proceedings.mlr.press/v202/liu23t) [Code](https://github.com/chxliou/LIN2023)
+- ***Causal Structure Learning for Latent Intervened Non-stationary Data***  
+  **Chenxi Liu**, Kun Kuang  
+  *ICML 2023*  
+  [paper](https://proceedings.mlr.press/v202/liu23t) | [code](https://github.com/chxliou/LIN2023)
 
 ---
 
-### Honors & Awards
+### Honors
 
-- **NeurIPS Scholar Award**, 2024  
-- **Scholarship from School of Mathematical Science**, Fudan University, 2022  
-- **Outstanding Undergraduate Thesis**, Southern University of Science and Technology, 2021
-- **First Prize in NOIP**, China Computer Federation, 2015
+- NeurIPS Scholar Award 2024
+- Scholarship, School of Mathematical Sciences, Fudan University 2022
+- Outstanding Undergraduate Thesis, SUSTech 2021
+- First Prize, National Olympiad in Informatics in Provinces (NOIP) 2015
 
+### Talks
 
----
+- Youth PhD Talk for ICLR 2026 @ AI Time 2026
+- Thinking–Language Modeling Gap @ CMU CLeaR Group 2025
+- Youth PhD Talk for NeurIPS 2024 @ AI Time 2024
 
-### Academic Talks
+### Service & Teaching
 
-- **On the Thinking–Language Modeling Gap in Large Language Models** @ CMU CLeaR Group, 2025  
-- **Youth PhD Talk for NeurIPS 2024** @ AI Time (Online), Nov. 13, 2024 [[Video]](https://www.bilibili.com/video/BV1vaUNYTEr3/?share_source=copy_web&vd_source=5460ce07d59a3de60388d68621af7f5c&t=3789)
-
----
-
-### Academic Service
-
-- **Conference Reviewer** <br>
-   ICML, NeurIPS, ICLR, CLeaR, AISTATS, UAI, KDD.
-
-- **Journal Reviewer**  <br>
-   TPAMI, JAIR, TNNLS, MLJ, NN.
-
----
-
-### Teaching
-<i>(Assistance in following courses)</i>
-
-- **[COMP7125 (Postgraduate)](https://www.comp.hkbu.edu.hk/v1/file/course/COMP7125.pdf)**, *Prompt Engineering for Generative AI*, 2025  
-
-- **[COMP2865 (Undergraduate)](https://www.comp.hkbu.edu.hk/v1/file/course/COMP2865.pdf)**, *Fundamentals of Data Analysis and Management*, 2024  
+- Reviewer: ICML · NeurIPS · ICLR · AISTATS · UAI · CLeaR · KDD; TPAMI · JAIR · TNNLS · MLJ · Neural Networks
+- TA: COMP7125 Prompt Engineering for Generative AI (2025) · COMP2865 Fundamentals of Data Analysis (2024)
