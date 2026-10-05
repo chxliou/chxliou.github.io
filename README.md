@@ -14,17 +14,17 @@ I build *Autonomous Agents* that discover how their environment works — throug
 
 - ***CausalGame: Benchmarking Causal Thinking of LLM Agents in Games***  
   Zhenhao Chen*, Yongqiang Chen*, **Chenxi Liu***, Junchi Yu, Xiangchen Song, Zijian Li, Jialin Li, Philip Torr, Bo Han, Kun Zhang  
-  *ICML 2026 · **Oral (0.7%)***  
+  *In International Conference on Machine Learning (**ICML**), 2026 · **Oral (0.7%)***  
   [paper](https://openreview.net/pdf?id=SEFSkn4l6d) | [code](https://github.com/CausalGame/CausalGame) | [website](https://causalgame.github.io/)
 
 - ***Discovering and Reasoning of Causality in the Hidden World with Large Language Models***  
   **Chenxi Liu***, Yongqiang Chen*, Tongliang Liu, Mingming Gong, James Cheng, Bo Han, Kun Zhang  
-  *JMLR 2026 · **SIGKDD Symposium Oral***  
+  *In Journal of Machine Learning Research (**JMLR**), 2026 · **SIGKDD Symposium Oral***  
   [paper](https://arxiv.org/abs/2402.03941v3)
 
 - ***On the Thinking–Language Modeling Gap in Large Language Models***  
   **Chenxi Liu***, Yongqiang Chen*, Tongliang Liu, James Cheng, Bo Han, Kun Zhang  
-  *ICLR 2026*  
+  *In International Conference on Learning Representations (**ICLR**), 2026*  
   [paper](https://arxiv.org/abs/2505.12896) | [code](https://github.com/tmlr-group/LoT-2026) | [page](https://causalcoat.github.io/lot.html)
 
 - ***CausalEvolve: Towards Open-Ended Discovery with Causal Scratchpad***  
@@ -34,12 +34,12 @@ I build *Autonomous Agents* that discover how their environment works — throug
 
 - ***Discovery of the Hidden World with Large Language Models***  
   **Chenxi Liu***, Yongqiang Chen*, Tongliang Liu, Mingming Gong, James Cheng, Bo Han, Kun Zhang  
-  *NeurIPS 2024*  
+  *In Advances in Neural Information Processing Systems (**NeurIPS**), 2024*  
   [paper](https://proceedings.neurips.cc/paper_files/paper/2024/hash/b99a07486702417d3b1bd64ec2cf74ad-Abstract-Conference.html) | [code](https://github.com/tmlr-group/CausalCOAT) | [page](https://causalcoat.github.io/) | [博客](https://mp.weixin.qq.com/s/Lt2VlHiMiHUlo8hewFJqjQ) | [视频](https://www.bilibili.com/video/BV1vaUNYTEr3/)
 
 - ***Causal Structure Learning for Latent Intervened Non-stationary Data***  
   **Chenxi Liu**, Kun Kuang  
-  *ICML 2023*  
+  *In International Conference on Machine Learning (**ICML**), 2023*  
   [paper](https://proceedings.mlr.press/v202/liu23t) | [code](https://github.com/chxliou/LIN2023)
 
 ---
