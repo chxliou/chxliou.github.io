@@ -19,7 +19,7 @@ I build *Autonomous Agents* that discover how their environment works — throug
 
 - ***Discovering and Reasoning of Causality in the Hidden World with Large Language Models***  
   **Chenxi Liu***, Yongqiang Chen*, Tongliang Liu, Mingming Gong, James Cheng, Bo Han, Kun Zhang  
-  *JMLR (under minor revision) · **SIGKDD Symposium Oral** 2026*  
+  *JMLR 2026 · **SIGKDD Symposium Oral***  
   [paper](https://arxiv.org/abs/2402.03941v3)
 
 - ***On the Thinking–Language Modeling Gap in Large Language Models***  
