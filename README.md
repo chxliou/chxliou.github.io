@@ -10,6 +10,20 @@ I build *Autonomous Agents* that discover how their environment works — throug
 
 ---
 
+### Featured Project
+
+**[COAT-Learn](https://github.com/causalcoat/COAT-Learn)**
+
+A Python toolkit for discovering and measuring factors in unstructured data, learning causal structure, and estimating causal effects.
+
+```bash
+pip install coatlearn
+```
+
+[Get started](https://causalcoat.github.io/docs/#/quickstart) · [GitHub](https://github.com/causalcoat/COAT-Learn) · [Docs](https://causalcoat.github.io/docs/#/)
+
+---
+
 ### Selected Papers
 
 - ***CausalGame: Benchmarking Causal Thinking of LLM Agents in Games***  
@@ -20,7 +34,7 @@ I build *Autonomous Agents* that discover how their environment works — throug
 - ***Discovering and Reasoning of Causality in the Hidden World with Large Language Models***  
   **Chenxi Liu***, Yongqiang Chen*, Tongliang Liu, Mingming Gong, James Cheng, Bo Han, Kun Zhang  
   *In Journal of Machine Learning Research (**JMLR**), 2026 · **SIGKDD Symposium Oral***  
-  [paper](https://arxiv.org/abs/2402.03941v3)
+  [paper](https://arxiv.org/abs/2402.03941v3) | [software](https://github.com/causalcoat/COAT-Learn) | [docs](https://causalcoat.github.io/docs/#/)
 
 - ***On the Thinking–Language Modeling Gap in Large Language Models***  
   **Chenxi Liu***, Yongqiang Chen*, Tongliang Liu, James Cheng, Bo Han, Kun Zhang  
@@ -35,7 +49,7 @@ I build *Autonomous Agents* that discover how their environment works — throug
 - ***Discovery of the Hidden World with Large Language Models***  
   **Chenxi Liu***, Yongqiang Chen*, Tongliang Liu, Mingming Gong, James Cheng, Bo Han, Kun Zhang  
   *In Advances in Neural Information Processing Systems (**NeurIPS**), 2024*  
-  [paper](https://proceedings.neurips.cc/paper_files/paper/2024/hash/b99a07486702417d3b1bd64ec2cf74ad-Abstract-Conference.html) | [code](https://github.com/tmlr-group/CausalCOAT) | [page](https://causalcoat.github.io/) | [博客](https://mp.weixin.qq.com/s/Lt2VlHiMiHUlo8hewFJqjQ) | [视频](https://www.bilibili.com/video/BV1vaUNYTEr3/)
+  [paper](https://proceedings.neurips.cc/paper_files/paper/2024/hash/b99a07486702417d3b1bd64ec2cf74ad-Abstract-Conference.html) | [code](https://github.com/tmlr-group/CausalCOAT) | [page](https://causalcoat.github.io/neurips-24/) | [博客](https://mp.weixin.qq.com/s/Lt2VlHiMiHUlo8hewFJqjQ) | [视频](https://www.bilibili.com/video/BV1vaUNYTEr3/)
 
 - ***Causal Structure Learning for Latent Intervened Non-stationary Data***  
   **Chenxi Liu**, Kun Kuang  

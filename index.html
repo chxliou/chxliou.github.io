@@ -13,7 +13,8 @@
   <title>Chenxi Liu's Homepage</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon.png" type="image/png" sizes="64x64">
-  <link rel="stylesheet" href="css/style.css?v=20260925">
+  <script src="scripts/app.js?v=20261114-3"></script>
+  <link rel="stylesheet" href="css/style.css?v=20261114-3">
 </head>
 <body>
 
@@ -32,6 +33,27 @@
         <a href="https://www.linkedin.com/in/chenxi-liu-b79170147/" target="_blank" rel="noopener">linkedin</a>
       </p>
     </header>
+
+    <section class="featured-project" aria-labelledby="featured-project-heading">
+      <h2 id="featured-project-heading">Featured Project</h2>
+      <article class="project-card">
+        <h3 class="project-title"><a href="https://github.com/causalcoat/COAT-Learn" target="_blank" rel="noopener">COAT-Learn</a></h3>
+        <p class="project-description">A Python toolkit for discovering and measuring factors in unstructured data, learning causal structure, and estimating causal effects.</p>
+        <div class="project-actions">
+          <div class="project-install">
+            <code id="install-command">pip install coatlearn</code>
+            <button id="copy-install" type="button" aria-label="Copy installation command" hidden>Copy</button>
+          </div>
+          <p class="project-links">
+            <a class="project-start" href="https://causalcoat.github.io/docs/#/quickstart" target="_blank" rel="noopener">Get started <span aria-hidden="true">&rarr;</span></a>
+            <a href="https://github.com/causalcoat/COAT-Learn" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://causalcoat.github.io/docs/#/" target="_blank" rel="noopener">Docs</a>
+          </p>
+        </div>
+        <p id="copy-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+        <p id="copy-help" class="copy-help" hidden>Couldn't copy automatically. Select the command above and copy it manually.</p>
+      </article>
+    </section>
 
     <section>
       <h2>Selected Papers</h2>
@@ -54,7 +76,7 @@
         <h3 class="ptitle"><a href="https://www.jmlr.org/papers/v27/25-2137.html" target="_blank" rel="noopener">Discovering and Reasoning of Causality in the Hidden World with Large Language Models</a></h3>
         <p class="pauth"><strong class="me">Chenxi Liu*</strong>, Yongqiang Chen*, Tongliang Liu, Mingming Gong, James Cheng, Bo Han, Kun Zhang</p>
         <p class="pvenue">In Journal of Machine Learning Research (<strong>JMLR</strong>), 2026 · <span class="tag">SIGKDD Symposium Oral</span></p>
-        <p class="plinks"><a href="https://www.jmlr.org/papers/v27/25-2137.html" target="_blank" rel="noopener">paper</a></p>
+        <p class="plinks"><a href="https://www.jmlr.org/papers/v27/25-2137.html" target="_blank" rel="noopener">paper</a> <span class="sep">|</span> <a href="https://github.com/causalcoat/COAT-Learn" target="_blank" rel="noopener">software</a> <span class="sep">|</span> <a href="https://causalcoat.github.io/docs/#/" target="_blank" rel="noopener">docs</a></p>
       </article>
 
       <article class="paper">
@@ -68,7 +90,7 @@
         <h3 class="ptitle"><a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/b99a07486702417d3b1bd64ec2cf74ad-Abstract-Conference.html" target="_blank" rel="noopener">Discovery of the Hidden World with Large Language Models</a></h3>
         <p class="pauth"><strong class="me">Chenxi Liu*</strong>, Yongqiang Chen*, Tongliang Liu, Mingming Gong, James Cheng, Bo Han, Kun Zhang</p>
         <p class="pvenue">In Advances in Neural Information Processing Systems (<strong>NeurIPS</strong>), 2024</p>
-        <p class="plinks"><a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/b99a07486702417d3b1bd64ec2cf74ad-Abstract-Conference.html" target="_blank" rel="noopener">paper</a> <span class="sep">|</span> <a href="https://github.com/tmlr-group/CausalCOAT" target="_blank" rel="noopener">code</a> <span class="sep">|</span> <a href="https://causalcoat.github.io/" target="_blank" rel="noopener">page</a> <span class="sep">|</span> <a href="https://mp.weixin.qq.com/s/Lt2VlHiMiHUlo8hewFJqjQ" target="_blank" rel="noopener">博客</a> <span class="sep">|</span> <a href="https://www.bilibili.com/video/BV1vaUNYTEr3/" target="_blank" rel="noopener">视频</a></p>
+        <p class="plinks"><a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/b99a07486702417d3b1bd64ec2cf74ad-Abstract-Conference.html" target="_blank" rel="noopener">paper</a> <span class="sep">|</span> <a href="https://github.com/tmlr-group/CausalCOAT" target="_blank" rel="noopener">code</a> <span class="sep">|</span> <a href="https://causalcoat.github.io/neurips-24/" target="_blank" rel="noopener">page</a> <span class="sep">|</span> <a href="https://mp.weixin.qq.com/s/Lt2VlHiMiHUlo8hewFJqjQ" target="_blank" rel="noopener">博客</a> <span class="sep">|</span> <a href="https://www.bilibili.com/video/BV1vaUNYTEr3/" target="_blank" rel="noopener">视频</a></p>
       </article>
 
       <article class="paper">
@@ -111,6 +133,5 @@
 
   <a id="edit-btn" href="https://github.com/chxliou/chxliou.github.io/blob/main/index.html" target="_blank" rel="noopener">✎ edit</a>
 
-  <script src="scripts/app.js?v=20260925"></script>
 </body>
 </html>

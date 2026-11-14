@@ -12,6 +12,9 @@
   --serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, "Times New Roman", serif;
 }
 
+html { color-scheme: light; }
+html.dark { color-scheme: dark; }
+
 /* ---- color tokens ---- */
 
 body {
@@ -99,6 +102,110 @@ html.dark ::selection { background: rgba(88, 166, 255, 0.30); }
   color: var(--ink3);
   margin: 0 0 10px;
 }
+
+/* featured software: quiet emphasis, using the shared light/dark tokens */
+.page .featured-project { margin-top: 36px; }
+.page .featured-project + section { margin-top: 40px; }
+
+.project-card {
+  padding: 20px 24px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--card);
+}
+
+.project-title {
+  margin: 0 0 6px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.project-title a { color: var(--ink); }
+.project-title a:hover { color: var(--link); }
+
+.project-description {
+  margin: 0;
+  color: var(--ink2);
+  font-size: 15.5px;
+  line-height: 1.7;
+  text-wrap: pretty;
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+  margin-top: 14px;
+}
+
+.project-install {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: fit-content;
+  max-width: 100%;
+  padding: 5px 10px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: #f6f8fa;
+}
+
+html.dark .project-install { background: #161b22; }
+
+.project-install code {
+  color: var(--ink);
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+  font-size: 13px;
+  white-space: nowrap;
+  user-select: text;
+}
+
+#copy-install {
+  flex: none;
+  width: 64px;
+  min-height: 32px;
+  padding: 0;
+  border: 0;
+  border-radius: 3px;
+  background: transparent;
+  color: var(--ink2);
+  font-family: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+#copy-install:hover { color: var(--link); }
+#copy-install:disabled { cursor: wait; }
+
+.copy-help { margin: 8px 0 0; color: var(--ink2); font-size: 13px; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 22px;
+  margin: 0;
+  font-size: 14px;
+}
+
+.project-links a { color: var(--link); }
+.project-links .project-start { font-weight: 600; }
+.project-links a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 /* paper entry: title / authors / [venue . . . links] */
 .paper {
@@ -222,11 +329,19 @@ html.dark ::selection { background: rgba(88, 166, 255, 0.30); }
    Responsive
    ========================================================================== */
 
+@media (max-width: 760px) {
+  .paper { grid-template-columns: 1fr; }
+  .paper .plinks { grid-column: 1; justify-self: start; }
+}
+
 @media (max-width: 640px) {
   .page { padding: 64px 22px 120px; }
   .page h1 { font-size: 29px; }
-  .paper { grid-template-columns: 1fr; }
-  .paper .plinks { grid-column: 1; justify-self: start; }
+  .project-card { padding: 18px 16px; }
+  .project-actions { flex-direction: column; align-items: flex-start; }
+  .project-install { gap: 6px; padding: 4px 6px; }
+  .project-install code { font-size: 12px; }
+  #copy-install { width: 54px; font-size: 12px; }
   .container { margin: 24px auto; }
   .markdown-section { padding: 30px 24px 28px; }
 }

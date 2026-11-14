@@ -7,3 +7,6 @@
 # Editor
 .vscode/
 .idea/
+
+# Local design vocabulary
+/GLOSSARY.md
