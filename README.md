@@ -1,7 +1,7 @@
 ### Chenxi Liu
 
 PhD Student · [TMLR Group](https://bhanml.github.io/group.html) @ HKBU, advised by [Prof. Bo Han](https://bhanml.github.io/)
-Visiting @ [MBZUAI](https://mbzuai.ac.ae/research/department/machine-learning-department/) with [Kun Zhang](https://www.andrew.cmu.edu/user/kunz1/) & [Yongqiang Chen](https://lfhase.win/)
+Visiting @ [MBZUAI/CMU CLeaR Group](https://www.cmu.edu/dietrich/causality/) with [Kun Zhang](https://www.andrew.cmu.edu/user/kunz1/) & [Yongqiang Chen](https://lfhase.win/)
 Previously @ [ZJU](http://www.cs.zju.edu.cn/) with [Kun Kuang](https://kunkuang.github.io/)
 
 I build *Autonomous Agents* that discover how their environment works — through *Causal Discovery* and *Recursive Self Improvement* — and continually adapt to new tasks.
@@ -20,7 +20,7 @@ A Python toolkit for discovering and measuring factors in unstructured data, lea
 pip install coatlearn
 ```
 
-[Get started](https://causalcoat.github.io/docs/#/quickstart) · [GitHub](https://github.com/causalcoat/COAT-Learn) · [Docs](https://causalcoat.github.io/docs/#/)
+[Get started](https://causalcoat.github.io/docs/#/quickstart) · [GitHub](https://github.com/causalcoat/COAT-Learn) · [Docs](https://causalcoat.github.io/docs/#/) · [1-min Video](https://causalcoat.github.io/#intro-video)
 
 ---
 
